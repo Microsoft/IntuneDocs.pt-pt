@@ -16,35 +16,35 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 358a396e762f1f20051abadfc2f3df80f37ca8c8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368486"
 ---
-# <a name="macos-endpoint-protection-settings-in-intune"></a>Configurações do MacOS Endpoint Protection no Intune  
+# <a name="macos-endpoint-protection-settings-in-intune"></a>Definições de proteção de pontos finais MacOS em Intune  
 
-Este artigo mostra as configurações do Endpoint Protection que você pode configurar para dispositivos que executam o macOS. Você define essas configurações usando um perfil de configuração de dispositivo macOS para o [Endpoint Protection](endpoint-protection-configure.md) no Intune.  
+Este artigo mostra-lhe as definições de proteção de pontofinal que pode configurar para dispositivos que executam o macOS. Configura estas definições utilizando um perfil de configuração do dispositivo macOS para proteção de [pontos finais](endpoint-protection-configure.md) no Intune.  
 
 ## <a name="gatekeeper"></a>Controlador de chamadas  
 
-- **Permitir que os aplicativos sejam baixados destes locais**  
-  Limite os aplicativos que um dispositivo pode iniciar, dependendo de onde os aplicativos foram baixados. A intenção é proteger os dispositivos contra malware e permitir que os aplicativos apenas das fontes confiáveis.  
+- **Permitir aplicações descarregadas a partir destes locais**  
+  Limite as aplicações que um dispositivo pode lançar, dependendo de onde as aplicações foram descarregadas. A intenção é proteger os dispositivos contra malware, e permitir aplicações apenas das fontes em que confia.  
 
   - **Não configurado**  
   - **Mac App Store**  
   - **Mac App Store e programadores identificados**  
   - **Em qualquer lugar**  
 
-  **Padrão**: não configurado  
+  **Predefinição**: Não configurado  
 
-- **O usuário pode substituir o gatekeeper**  
-  Impede que os usuários substituam a configuração do gatekeeper e impede que os usuários controlem clicando para instalar um aplicativo. Quando estiver ativado, os utilizadores podem manter a tecla Ctrl premida e clicar em qualquer aplicação e instalá-la.  
+- **O utilizador pode substituir o Gatekeeper**  
+  Impede que os utilizadores ultrapassem a definição do Gatekeeper e impede que os utilizadores do Control clique para instalar uma aplicação. Quando estiver ativado, os utilizadores podem manter a tecla Ctrl premida e clicar em qualquer aplicação e instalá-la.  
  
-  - **Não configurado** -os usuários podem controlar e clicar para instalar aplicativos.  
-  - **Bloquear** – impede que os usuários usem o controle-clique para instalar aplicativos.  
+  - **Não configurado** - Os utilizadores podem controlar o clique para instalar aplicações.  
+  - **Block** - Impede que os utilizadores utilizem o 'Control-click' para instalar aplicações.  
 
-  **Padrão**: não configurado  
+  **Predefinição**: Não configurado  
 
 ## <a name="firewall"></a>Firewall  
 
@@ -52,69 +52,69 @@ Utilize a firewall para controlar ligações por aplicação e não por porta. U
 
 **Geral**
 - **Firewall**  
-  Habilite o firewall para configurar como as conexões de entrada são tratadas em seu ambiente.  
+  Ative a Firewall para configurar a forma como as ligações de entrada são tratadas no seu ambiente.  
   - **Não configurado**  
   - **Ativar**  
 
-  **Padrão**: não configurado  
+  **Predefinição**: Não configurado  
 
-- **Conexões de entrada**  
-  Bloqueie todas as conexões de entrada, exceto as conexões necessárias para os serviços básicos da Internet, como DHCP, Bonjour e IPSec. Esta funcionalidade também bloqueia todos os serviços de partilha, tal como a Partilha de Ficheiros e a Partilha de Ecrãs. Se estiver a utilizar serviços de partilha, mantenha esta definição como *Não configurado*.  
+- **Ligações de entrada**  
+  Bloqueie todas as ligações de entrada, exceto as ligações necessárias para serviços básicos de Internet, tais como DHCP, Bonjour e IPSec. Esta funcionalidade também bloqueia todos os serviços de partilha, tal como a Partilha de Ficheiros e a Partilha de Ecrãs. Se estiver a utilizar serviços de partilha, mantenha esta definição como *Não configurado*.  
   - **Não configurado**  
   - **Bloquear**  
 
-  **Padrão**: não configurado  
+  **Predefinição**: Não configurado  
 
-**Permitir ou bloquear conexões de entrada para aplicativos específicos.**  
+**Permitir ou bloquear ligações de entrada para aplicações específicas.**  
 
   - **Aplicativos permitidos**  
-    Selecione os aplicativos que têm permissão explícita para receber conexões de entrada.  
+    Selecione as aplicações que estão explicitamente autorizadas a receber ligações de entrada.  
 
   - **Aplicativos bloqueados**  
-    Selecione os aplicativos que devem bloquear conexões de entrada.  
+    Selecione as aplicações que devem bloquear as ligações de entrada.  
 
-  - **Modo furtivo**  
-    Para impedir que o computador responda às solicitações de investigação, habilite o modo furtivo. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).  
+  - **Modo stealth**  
+    Para evitar que o computador responda a pedidos de sondagem, ative o modo de stealth. O dispositivo continua a responder a pedidos recebidos de aplicações autorizadas. São ignorados pedidos inesperados, tais como o protocolo ICMP (ping).  
     - **Não configurado**  
     - **Ativar**  
 
-    **Padrão**: não configurado  
+    **Predefinição**: Não configurado  
 
 ## <a name="filevault"></a>FileVault  
-Para obter mais informações sobre as configurações do Apple FileVault, consulte [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) no conteúdo do desenvolvedor da Apple. 
+Para obter mais informações sobre as definições do Apple FileVault, consulte [o FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) no conteúdo do desenvolvedor da Apple. 
 
 > [!IMPORTANT]  
-> A partir do macOS 10,15, a configuração do FileVault requer o registro de MDM aprovado pelo usuário. 
+> A partir do macOS 10.15, a configuração do FileVault requer a inscrição do MDM aprovada pelo utilizador. 
 
 - **FileVault**  
-  Você pode *habilitar* a criptografia de disco completa usando o XTS-AES 128 com o FileVault em dispositivos que executam o MacOS 10,13 e posterior.  
+  Pode *ativar* a encriptação full disk utilizando xTS-AES 128 com FileVault em dispositivos que executam o macOS 10.13 e posteriormente.  
   - **Não configurado**  
   - **Ativar**  
 
-  **Padrão**: não configurado  
+  **Predefinição**: Não configurado  
 
   - **Tipo de chave de recuperação**  
-    Chaves de recuperação de *chave pessoal* são criadas para dispositivos. Defina as configurações a seguir para a chave pessoal.  
+    As chaves de recuperação *das chaves pessoais* são criadas para dispositivos. Configure as seguintes definições para a chave pessoal.  
 
-    - **Local da chave de recuperação pessoal** – especifique uma mensagem curta para o usuário que explica como e onde eles podem recuperar sua chave de recuperação pessoal. Esse texto é inserido na mensagem que o usuário vê em sua tela de logon quando solicitado a inserir sua chave de recuperação pessoal se uma senha for esquecida.  
+    - **Localização da chave de recuperação pessoal** - Especifique uma mensagem curta para o utilizador que explique como e onde pode recuperar a sua chave de recuperação pessoal. Este texto é inserido na mensagem que o utilizador vê no seu login no ecrã quando solicitado a introduzir a sua chave de recuperação pessoal se uma palavra-passe for esquecida.  
       
-    - **Rotação de chave de recuperação pessoal** – especifique com que frequência a chave de recuperação pessoal de um dispositivo será girada. Você pode selecionar o padrão **não configurado**ou um valor de **1** a **12** meses.  
+    - Rotação da chave de **recuperação pessoal** - Especifique com que frequência a chave de recuperação pessoal de um dispositivo girará. Pode selecionar o padrão de **Não configurado,** ou um valor de **1** a **12** meses.  
 
-  - **Desabilitar aviso ao sair**  
-    Impedir o prompt para o usuário que solicita que eles habilitem o FileVault quando eles se desconectarem.  Quando definido como desabilitado, o prompt na saída é desabilitado e, em vez disso, o usuário recebe uma solicitação quando entra.  
+  - **Desativar o pedido de sinalização**  
+    Evite a solicitação ao utilizador que solicita que ative o FileVault quando assinar.  Quando programado para desativar, o aviso de inscrição é desativado e, em vez disso, o utilizador é solicitado quando faz o início.  
     - **Não configurado**  
-    - **Desabilitar** – desabilitar o prompt na saída.
+    - **Desativar** - Desative o pedido de inscrição.
 
-    **Padrão**: não configurado  
+    **Predefinição**: Não configurado  
 
-  - **Número de vezes com permissão para ignorar**  
-  Defina o número de vezes que um usuário pode ignorar prompts para habilitar FileVault antes que FileVault seja necessário para que o usuário entre. 
+  - **Número de vezes permitidos para contornar**  
+  Detete o número de vezes que um utilizador pode ignorar as instruções para ativar o FileVault antes de o FileVault ser necessário para que o utilizador faça o início. 
 
-    - **Não configurado** -a criptografia no dispositivo é necessária antes que a próxima entrada seja permitida.  
-    - **1** a **10** -permite que um usuário ignore o prompt de 1 a 10 vezes antes de exigir a criptografia no dispositivo.  
-    - **Sem limite, sempre avisar** -o usuário é solicitado a habilitar FileVault, mas a criptografia nunca é necessária.  
+    - **Não configurado** - A encriptação no dispositivo é necessária antes da próxima inscrição ser permitida.  
+    - **1** a **10** - Permita que um utilizador ignore a solicitação de 1 a 10 vezes antes de necessitar de encriptação no dispositivo.  
+    - **Sem limite, sempre solicitado** - O utilizador é solicitado para ativar o FileVault, mas a encriptação nunca é necessária.  
  
-    **Padrão**: *varia* -quando a configuração *desabilitar prompt em sair* está definida como **não configurado**, essa configuração assume como padrão **não configurado**. Quando *desabilitar prompt na saída* estiver definido como **desabilitar**, essa configuração padrão será **1** e o valor **não configurado não** será uma opção.
+    **Predefinição**: *Varia* - Quando a definição *Desativar o aviso* de sinal está definida para **Não configurada,** esta definição deprecia **para não configurada**. Quando o *aviso de desativação no sinal* é definido para **Desativar,** esta definição não se aplica a **1** e um valor de **Não configurado** não é uma opção.
 
-Para obter mais informações sobre o FileVault com o Intune, consulte [chaves de recuperação do FileVault](encryption-monitor.md#filevault-recovery-keys).
+Para mais informações sobre fileVault com Intune, consulte as chaves de [recuperação do FileVault](encryption-monitor.md#filevault-recovery-keys).
 

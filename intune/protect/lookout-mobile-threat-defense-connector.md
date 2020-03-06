@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 628aa93af912d6c50a6897dbf871702e46b4893e
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782148"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368518"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Conector de segurança de ponto de ponta móvel lookout com Intune
 

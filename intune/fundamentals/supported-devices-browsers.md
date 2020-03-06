@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 536f689a009f3e7e0128c350bafd3bf1340aeaaa
-ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260219"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369438"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 

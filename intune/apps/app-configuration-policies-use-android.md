@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7650230e419a639adfe02cd6c01f6170a4eb878b
-ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369192"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Adicione políticas de configuração de aplicativos para dispositivos Android Enterprise geridos
 
@@ -94,7 +94,7 @@ Pode escolher as seguintes opções, se selecionar a variável como o tipo de va
 | Id do dispositivo AAD | dc0dc142-11d8-4b12-bfea-cae2a8514c82 |
 | ID de conta | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | ID de Dispositivo do Intune | b9841cd9-9843-405f-be28-b2265c59ef97 |
-| Domínio | contoso.com |
+| Domain | contoso.com |
 | Correio | john@contoso.com |
 | UPN Parcial | joão |
 | ID de Utilizador | 3ec2c00f-b125-4519-acf0-302ac3761822 |
