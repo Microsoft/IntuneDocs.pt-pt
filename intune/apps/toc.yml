@@ -161,6 +161,8 @@
             - name: Descrição geral das políticas de proteção de aplicações
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: Data protection framework using APP (Arquitetura de proteção de dados com APP)
+              href: app-protection-framework.md
             - name: Criar políticas de proteção de aplicações
               items:
                 - name: Definições gerais
