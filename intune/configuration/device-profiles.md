@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77513080"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368982"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicar definições e funcionalidades nos dispositivos com perfis de dispositivo no Microsoft Intune
 
@@ -61,7 +61,7 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 - Windows 8,1
 - Windows 10 e posterior
 
@@ -75,7 +75,7 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 
 ## <a name="delivery-optimization"></a>Otimização da entrega
 
@@ -140,7 +140,7 @@ Esta funcionalidade suporta:
 - Android
 - Android Enterprise
 - iOS/iPadOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 - Windows 10 e posterior
 
 ## <a name="endpoint-protection"></a>Proteção de ponto final
@@ -239,7 +239,7 @@ Esta funcionalidade suporta:
 - Android Enterprise
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
+- Wnodows Phone 8.1
 - Windows 8,1
 - Windows 10 e posterior
 

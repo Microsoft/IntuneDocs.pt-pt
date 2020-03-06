@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 122f0b0194a96b844e274ab39a73224eb23cc6b3
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368983"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Definições de dispositivos do Android Enterprise para permitir ou restringir funcionalidades com o Intune
 
@@ -178,10 +178,10 @@ Utilize estas definições para configurar uma experiência de estilo quiosque n
   - **Predefinição do dispositivo**
   - **Palavra-passe obrigatória, sem restrições**
   - **Biométrico fraco**: [Biometria forte vs. biométrico fraco](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (abre o site do Android)
-  - **Numérico:** A palavra-passe só deve ser números, como `123456789`. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Complexo numérico**: Números repetidos ou consecutivos, como "1111" ou "1234", não são permitidos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alfabética:** São necessárias letras no alfabeto. Não são obrigatórios números nem símbolos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
-  - **Alfanumérico:** Inclui letras maiúsculas, letras minúsculas e caracteres numéricos. introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Numérico:** A palavra-passe só deve ser números, como `123456789`. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Complexo numérico**: Números repetidos ou consecutivos, como "1111" ou "1234", não são permitidos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfabética:** São necessárias letras no alfabeto. Não são obrigatórios números nem símbolos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
+  - **Alfanumérico:** Inclui letras maiúsculas, letras minúsculas e caracteres numéricos. Introduza o **comprimento mínimo da palavra-passe** que um utilizador tem de introduzir, entre 4 e 16 carateres.
   - **Alfanumérico com símbolos**: Inclui letras maiúsculas, letras minúsculas, caracteres numéricos, marcas de pontuação e símbolos. Introduza também:
 
     - Comprimento mínimo da **palavra-passe**: Introduza o comprimento mínimo que a palavra-passe deve ter, entre 4 e 16 caracteres.

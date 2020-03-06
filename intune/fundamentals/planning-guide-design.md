@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514970"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369620"
 ---
 # <a name="create-a-design"></a>Criar uma estrutura
 
@@ -155,7 +155,7 @@ Recomendamos que crie todos os grupos no Active Directory no local e, em seguida
 - [Criar grupos de utilizadores e de dispositivos](groups-add.md).
 
 ### <a name="public-key-infrastructure-pki"></a>Infraestrutura de chaves públicas (PKI)
-A infraestrutura de chaves públicas fornece certificados para dispositivos ou utilizadores de forma a autenticar a um serviço com segurança. O Intune suporta uma infraestrutura PKI do Microsoft. Os certificados de dispositivos e utilizadores podem ser emitidos para um dispositivo móvel para cumprir requisitos de autenticação baseados em certificados. Antes de utilizar certificados, tem de determinar se precisa dos mesmos, se a infraestrutura de rede suporta a autenticação baseada em certificados e se os certificados estão a ser utilizados no ambiente existente.
+A infraestrutura de chaves públicas fornece certificados para dispositivos ou utilizadores de forma a autenticar a um serviço com segurança. O Intune suporta uma infraestrutura PKI da Microsoft. Os certificados de dispositivos e utilizadores podem ser emitidos para um dispositivo móvel para cumprir requisitos de autenticação baseados em certificados. Antes de utilizar certificados, tem de determinar se precisa dos mesmos, se a infraestrutura de rede suporta a autenticação baseada em certificados e se os certificados estão a ser utilizados no ambiente existente.
 
 Se estiver a planear utilizar certificados com VPN, Wi-Fi ou perfis de e-mail com o Intune, certifique-se de que tem uma [infraestrutura PKI suportada no local](../protect/certificates-configure.md), pronta para criar e implementar perfis de certificado.
 
@@ -225,11 +225,11 @@ Nestas secções, analisamos as seguintes funcionalidades e capacidades que est�
 
 - Perfis de recursos
 
-- Aplicações
+- Apps
 
 - Política de conformidade
 
-- Acesso Condicional
+- Conditional Access
 
 Analisemos cada uma destas áreas mais detalhadamente.
 
@@ -340,7 +340,7 @@ Segue-se um exemplo de como documentar a estrutura de perfis de e-mail:
 | Perfil de e-mail | Perfil de e-mail Android Knox | Android Knox | BYOD |
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de perfis de e-mail.
-### <a name="apps"></a>Aplicações
+### <a name="apps"></a>Apps
 
 Pode utilizar o Intune para disponibilizar aplicações aos utilizadores ou dispositivos de várias formas. O tipo de aplicação inclui aplicações de instalador de software, aplicações de uma loja de aplicações pública, ligações externas ou aplicações iOS geridas. Além das implementações de aplicações individuais, pode gerir e implementar aplicações compradas em volume obtidas através dos programas de aquisição em volume para iOS e Windows. Saiba mais sobre:
 
@@ -378,7 +378,7 @@ As políticas de proteção de aplicações minimizam a perda de dados ao defini
 
 
 Pode [transferir um modelo da tabela acima](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar as suas necessidades de políticas de proteção de aplicações.
-#### <a name="compliance-policies"></a>Políticas de conformidade
+#### <a name="compliance-policies"></a>Compliance políticas
 
 As políticas de conformidade determinam se um dispositivo cumpre determinados requisitos. O Intune utiliza políticas de conformidade para determinar se um dispositivo é considerado como estando ou não em conformidade. O estado de conformidade pode depois ser utilizado para restringir ou permitir o acesso a recursos da empresa. Se for necessário acesso condicional, recomendamos que desenhe uma política de conformidade do [dispositivo.](../protect/device-compliance-get-started.md)
 

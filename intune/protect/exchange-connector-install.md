@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7d00fec5efd9caa54c7f481389e3993e9797699c
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755743"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370016"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Configurar o conector Intune Exchange no local
 
@@ -54,7 +54,7 @@ A tabela seguinte enumera os requisitos para o computador no qual instala o cone
 
 |  Requisito  |   Mais informações     |
 |---------------|------------------------|
-|  Operating systems        | Intune suporta o conector Intune Exchange num computador que executa qualquer edição do Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2016.<br /><br />O conector não é suportado em nenhuma instalação do Núcleo do Servidor.  |
+|  Sistemas operativos        | Intune suporta o conector Intune Exchange num computador que executa qualquer edição do Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 ou Windows Server 2016.<br /><br />O conector não é suportado em nenhuma instalação do Núcleo do Servidor.  |
 | Microsoft Exchange          | Os conectores no local necessitam do Microsoft Exchange 2010 SP3 ou posterior, ou o Exchange Online Dedicado legado. Para determinar se o ambiente dedicado do Exchange Online está na configuração *nova* ou *legada*, contacte o seu gestor de conta. |
 | Autoridade de gestão de dispositivos móveis           | [Definir o Intune como a autoridade de gestão de dispositivos móveis](../fundamentals/mdm-authority-set.md). |
 | Hardware              | O computador onde irá instalar o conector requer uma CPU de 1,6 GHz com 2 GB de RAM e, pelo menos, 10 GB de espaço livre no disco. |
@@ -83,7 +83,7 @@ Crie uma conta de utilizador de Diretório Ativo para o conector Intune Exchange
 
 Num servidor Windows que pode suportar o conector Intune Exchange:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).  Use uma conta que é um administrador no servidor de troca no local e que tem uma licença para usar o Exchange Server.
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).  Use uma conta que é um administrador no servidor de troca no local e que tem uma licença para usar o Exchange Server.
 
 2. Selecione **a administração do Inquilino** > Exchange **access**.
 
@@ -119,7 +119,7 @@ Siga estes passos para instalar o conector Intune Exchange. Se tiver várias org
 
    2. Escolha o ícone **?** ícone no canto superior esquerdo e, em seguida, selecione **Cerca**de .
 
-   3. Localize o valor do **Servidor POP Externo**.
+   3. Localize o valor do **Servidor POP Externo** .
 
    4. Escolha o **Servidor Proxy** para especificar as definições do servidor proxy do seu servidor do Exchange alojado.
 
@@ -214,7 +214,7 @@ Pode ser necessário reinstalar um conector Intune Exchange. Uma vez que apenas 
 
 Depois de configurar com sucesso o conector Exchange, pode visualizar o estado das ligações e a última tentativa de sincronização bem sucedida:
 
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Selecione **a administração do Inquilino** > Exchange **access**.
 
@@ -234,7 +234,7 @@ Um conector Intune Exchange sincroniza automaticamente os registos do dispositiv
 
 Pode forçar um conector a executar uma sincronização utilizando as opções **Quick Sync** ou **Full Sync** no painel de instrumentos Intune:
 
-   1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
+   1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
    2. Selecione **a administração do Inquilino** > trocar **acesso** >  trocar o **conector ActiveSync no local**.
 
