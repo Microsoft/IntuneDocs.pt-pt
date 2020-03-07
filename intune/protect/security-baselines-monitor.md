@@ -17,11 +17,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5d03d6026430c7f9f02cc8504ccc610c3be99902
-ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78287571"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369898"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Monitorize a linha de base de segurança e os perfis no Microsoft Intune
 
@@ -151,6 +151,6 @@ Nos dispositivos windows 10, há um relatório de diagnóstico de MDM incorporad
 > - Algumas configurações também listam o GUID. Pode pesquisar este GUID no registo local (regedita) por quaisquer valores definidos.
 > - Os registos do Espectador de Eventos também podem incluir algumas informações de erro sobre a definição problemática ( Registos de > de**visualização** de **eventos > ** **Microsoft** > **Windows** > **DeviceManagement-Enterprise-Diagnostics-Provider** > **Admin).**
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 [Monitorize os perfis do dispositivo](../configuration/device-profile-monitor.md) e veja [algumas questões e resoluções comuns.](../configuration/device-profile-troubleshoot.md)
