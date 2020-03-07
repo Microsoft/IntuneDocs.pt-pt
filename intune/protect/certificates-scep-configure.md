@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514103"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78370046"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Configure infraestruturas para apoiar o SCEP com Intune
 
@@ -256,7 +256,7 @@ Os seguintes procedimentos podem ajudá-lo a configurar o Serviço de Inscriçã
         A instalação do ASP.NET 4.5 instala o .NET Framework 4.5. Ao instalar o .NET Framework 4.5, instale a funcionalidade **.NET Framework 4.5** principal, o **ASP.NET 4.5** e a funcionalidade **Serviços do WCF** > **Ativação HTTP**.
 
       - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade com Metabase do IIS 6**
-      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade WMI do IIS 6**
+      - **Ferramentas de Gestão** > **Compatibilidade de Gestão do IIS 6** > **Compatibilidade do WMI do IIS 6**
       - No servidor, adicione a conta do serviço do NDES como membro do grupo local **IIS_IUSR**.
 
 2. No computador que acolhe o serviço NDES, execute o seguinte comando num pedido de comando elevado. O seguinte comando define o SPN da conta de Serviço NDES:

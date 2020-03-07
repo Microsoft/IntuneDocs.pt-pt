@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68fcdb66591ec0e566aa702b3ca4d6c5c5448859
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368377"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Criar uma política de conformidade no Microsoft Intune
 
@@ -53,7 +53,7 @@ Para utilizar as políticas de conformidade de dispositivos:
   - macOS
   - Windows 10
   - Windows 8,1
-  - Windows Phone 8.1
+  - Wnodows Phone 8.1
 
 - Inscreva os dispositivos no Intune (necessário para ver o estado de conformidade).
 

@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 467e347a84cef1fb7ac302da5a4264f23b4be5a2
-ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368488"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Definições do Windows 10 (e mais tarde) para proteger dispositivos que utilizem Intune
 
@@ -403,7 +403,7 @@ Especifique as portas locais e remotas a que se aplica esta regra.
     - **Portas remotas** - Firewall CSP: [FirewallRules/*FirewallRuleName*/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)  
   - **Personalizado** – Especifique um número de **protocolo** personalizado de 0 a 255.  
 
-#### <a name="advanced-configuration"></a>Configurações avançadas  
+#### <a name="advanced-configuration"></a>Configuração avançada  
 - **Tipos de interface**  
   **Predefinição**: 0 selecionado  
   Firewall CSP: [FirewallRules/*FirewallRuleName*/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
@@ -1226,7 +1226,7 @@ Utilize estas opções para configurar as definições da segurança local em di
    - **Bloco** - Permita que apenas contas locais com senhas em branco assinem utilizando o teclado do dispositivo.  
    - **Não configurado** - Permita que contas locais com senhas em branco sintetizam em outros locais que não o dispositivo físico.  
 
-#### <a name="admin"></a>Administração  
+#### <a name="admin"></a>Admin  
 
 - **Conta de administração local**  
   **Predefinição**: Não configurado  
@@ -1884,7 +1884,7 @@ Utilize estas opções para configurar as definições da segurança local em di
   - **Não configurado**
   - **Permitir**
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil está criado, mas ainda não está ativo. Em seguida, [atribua o perfil](../configuration/device-profile-assign.md)e [monitorize o seu estado](../configuration/device-profile-monitor.md).  
 

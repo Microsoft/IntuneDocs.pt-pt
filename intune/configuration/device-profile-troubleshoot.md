@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77511332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368378"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Questões comuns, questões e resoluções com políticas e perfis de dispositivos no Microsoft Intune
 
@@ -52,25 +52,25 @@ Se um dispositivo não fizer o check-in para obter a apólice ou perfil após a 
 
 **Frequências estimadas:**
 
-| Platform | Ciclo de atualização|
+| Plataforma | Ciclo de atualização|
 | --- | --- |
 | iOS/iPadOS | Cerca de 8 horas |
 | macOS | Cerca de 8 horas |
 | Android | Cerca de 8 horas |
 | PCs com o Windows 10 inscritos como dispositivos | Cerca de 8 horas |
 | Windows Phone | Cerca de 8 horas |
-| Windows 8,1 | Cerca de 8 horas |
+| Windows 8.1 | Cerca de 8 horas |
 
 Se o dispositivo recentemente matriculado, o cumprimento, o incumprimento e o check-in de configuração são mais frequentemente executados, o que é **estimado** em:
 
-| Platform | Frequência |
+| Plataforma | Frequência |
 | --- | --- |
 | iOS/iPadOS | A cada 15 minutos por 1 hora, e em volta de 8 horas |  
 | macOS | A cada 15 minutos por 1 hora, e em volta de 8 horas | 
 | Android | A cada 3 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
 | PCs com o Windows 10 inscritos como dispositivos | A cada 3 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
 | Windows Phone | A cada 5 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
-| Windows 8,1 | A cada 5 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
+| Windows 8.1 | A cada 5 minutos por 15 minutos, a cada 15 minutos por 2 horas, e em volta de 8 horas | 
 
 A qualquer momento, os utilizadores podem abrir a aplicação Portal da Empresa, **Definições** > **Sync** para verificar imediatamente as atualizações de política ou de perfil.
 
@@ -122,7 +122,7 @@ Quando elimina um perfil, ou remove um dispositivo de um grupo que tem o perfil,
     - Permitir palavras-passe simples
     - Comprimento mínimo da palavra-passe
     - Tipo obrigatório de palavra-passe
-    - Expiração da palavra-passe (dias)
+    - Expiração da Palavra-passe (dias)
     - Memorizar histórico de palavras-passe
     - Número de falhas de início de sessão consecutivas a permitir antes do dispositivo ser apagado
     - Minutos de inatividade antes da palavra-passe ser exigida
@@ -167,6 +167,6 @@ Algumas definições nos dispositivos do Windows 10 podem apresentar como "Não 
 
 Para saber mais sobre a versão e os requisitos sKU para as diferentes definições, consulte a referência do Fornecedor de Serviços de [Configuração (CSP).](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Precisa de ajuda adicional? Veja [Como obter suporte para o Microsoft Intune](../fundamentals/get-support.md).

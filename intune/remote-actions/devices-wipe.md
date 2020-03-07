@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 931a1255a0b7aef6f776e8e0bf259e1ea0dd8d65
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
-ms.translationtype: MT
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781857"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368907"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 

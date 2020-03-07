@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2964893102bc1b6f9967b1a37261b860d8ea0104
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569392"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369370"
 ---
 # <a name="add-vpn-settings-on-ios-and-ipados-devices-in-microsoft-intune"></a>Adicione as definições vpN em dispositivos iOS e iPadOS no Microsoft Intune
 
@@ -43,7 +43,7 @@ Selecione o tipo de ligação VPN na seguinte lista de fornecedores:
 - **SonicWall Mobile Connect**
 - **F5 Access Legacy**: aplicável a versão 2.1 e versões anteriores da aplicação F5 Access.
 - **F5 Access**: aplicável a versão 3.0 e versões posteriores da aplicação F5 Access.
-- **Palo Alto Networks GlobalProtect (Legacy)**: aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
+- **Palo Alto Networks GlobalProtect (Legacy)** : aplicável a versão 4.1 e versões anteriores da aplicação Palo Alto Networks GlobalProtect.
 - **Palo Alto Networks GlobalProtect**: aplicável a versão 5.0 e versões posteriores da aplicação Palo Alto Networks GlobalProtect.
 - **Pulse Secure**
 - **Cisco (IPSec)**
