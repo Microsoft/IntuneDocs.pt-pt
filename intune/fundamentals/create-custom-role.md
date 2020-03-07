@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569188"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369810"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Criar um papel personalizado em Intune
 
@@ -40,7 +40,7 @@ Para criar, editar ou atribuir funções, a sua conta tem de ter uma das seguint
 
 3. Na página **Permissões,** escolha as permissões que pretende utilizar com esta função.
 
-4. Na página **Scope (Tags),** escolha as etiquetas para este papel. Este papel pode aceder a recursos que também têm estas tags. Escolha **Seguinte**.
+4. Na página **Scope (Tags),** escolha as etiquetas para este papel. Este papel pode aceder a recursos que também têm estas tags. Selecione **Next**.
 
 5. Na página **Review + criar** página, quando terminar, escolha **Criar**. O novo papel é apresentado na lista nas **funções Intune - Todas as funções.**
 

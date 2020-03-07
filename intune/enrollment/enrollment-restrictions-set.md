@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368560"
 ---
 # <a name="set-enrollment-restrictions"></a>Definir restrições de inscrição
 
@@ -43,7 +43,7 @@ As restrições de inscrição específicas que pode criar incluem:
 - Número máximo de dispositivos inscritos.
 - Plataformas de dispositivos que podem ser inscritas:
   - Administrador de dispositivos Android
-  - Perfil de trabalho do Android Enterprise
+  - Perfil de trabalho android Enterprise
   - iOS/iPadOS
   - macOS
   - Windows

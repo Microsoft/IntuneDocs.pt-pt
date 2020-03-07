@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6b6d5d51bedcd3f8251dd4ac307b58a08ba7cdc6
-ms.sourcegitcommit: 8b716db3c0fdbb7dff62497ec283902a5069a343
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652441"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369819"
 ---
 # <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Adicione as definições de Wi-Fi para dispositivos Android Enterprise dedicados e totalmente geridos no Microsoft Intune
 
