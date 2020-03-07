@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 46e0c0d6ddafc8079d5d25a964ecb4ff3e0acfdd
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
-ms.translationtype: MT
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576303"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369359"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -37,17 +37,17 @@ A entidade **appRevision** apresenta uma lista de todas as versões das aplicaç
 | AppKey                     | Identificador exclusivo da Aplicação.                                                         | 123                                  |
 | ApplicationID              | Identificador exclusivo da Aplicação – semelhante à AppKey, mas esta é uma chave natural.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revision                   | A versão como mencionada pelo administrador durante o carregamento do binário.                   | 2                                    |
-| Título                      | Nome da aplicação.                                                                     | Excel                                |
+| Title                      | Nome da aplicação.                                                                     | Excel                                |
 | Publicador                  | Publicador da aplicação.                                                                 | Microsoft                            |
 | UploadState                | Estado de carregamento da aplicação.                                                              | 1                                    |
 | AppTypeKey                 | Referência ao AppType descrito na secção seguinte.                            | 1                                    |
 | VppProgramTypeKey          | Referência ao VppProgramType descrito abaixo.                                        | 30876                                |
 | HoraDaCriação               | A hora em que esta revisão foi criada.                                            | 11/23/2016 0:00                      |
 | ModifiedTime               | A última vez em que algo relacionado com esta revisão foi alterado.                            | 11/23/2016 0:00                      |
-| Tamanho                       | Tamanho do binário em bytes.                                                          | 120 392 000                          |
+| Size                       | Tamanho do binário em bytes.                                                          | 120 392 000                          |
 | StartDateInclusiveUTC      | Data e hora em UTC em que a revisão da Aplicação foi criada no armazém de dados.      | 11/23/2016 0:00                      |
 | EndDateExclusiveUTC        | Data e hora em UTC em que a revisão desta aplicação se tornou obsoleta.                        | 11/23/2016 0:00                      |
-| IsCurrent                  | Indica se a versão desta Aplicação é atual ou não no armazém de dados.         | Verdadeiro/Falso                           |
+| IsCurrent                  | Indica se a versão desta Aplicação é atual ou não no armazém de dados.         | True/False                           |
 | RowLastModifiedDateTimeUTC | Data e hora em UTC em que esta versão da aplicação foi modificada pela última vez no armazém de dados. | 11/23/2016 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -83,12 +83,12 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 |    Propriedade   |                                                                                      Description                                                                                     |  Exemplo |
 |:-------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------:|
 | DateKey       | Chave da data em que o resumo da política de conformidade foi criado.                                                                                                                   | 20161204 |
-| Unknown       | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 5        |
+| Desconhecido       | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 5        |
 | NotApplicable | Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.                                                                                     | 201      |
-| conformidade     | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 4083     |
+| Compatível     | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 4083     |
 | InGracePeriod | Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador.                                                                                  | 57       |
 | NonCompliant  | Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador. | 43       |
-|    Erro      |    Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                          |    3     |
+|    Error      |    Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                          |    3     |
 
 ## <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities
 A tabela seguinte apresenta um resumo dos estados de atribuição de políticas de conformidade a dispositivos por política e por tipo de política. Esta tabela indica a contagem de dispositivos detetados em cada estado de conformidade para todas as políticas de conformidade atribuídas.
@@ -98,12 +98,12 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 | DateKey           | Chave da data em que o resumo da política de conformidade foi criado.                                                                                                                   | 20161219 |
 | PolicyKey         | Chave da política de conformidade para a qual o resumo foi criado.                                                                                                                   | 10178    |
 | PolicyPlatformKey | Chave do tipo de plataforma da política de conformidade para a qual o resumo foi criado.                                                                                            | 5        |
-| Unknown           | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 13       |
+| Desconhecido           | Número de dispositivos que estão offline ou que não conseguiram comunicar com o Intune ou o Azure AD por outros motivos.                                                                           | 13       |
 | NotApplicable     | Número de dispositivos em que as políticas de conformidade visadas pelo administrador não são aplicáveis.                                                                                     | 3        |
-| conformidade         | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 45       |
+| Compatível         | Número de dispositivos que aplicaram com êxito uma ou mais políticas de conformidade do dispositivo visadas pelo administrador.                                                                        | 45       |
 | InGracePeriod     | Número de dispositivos que não estão em conformidade, embora se encontrem no período de tolerância definido pelo administrador.                                                                                  | 3        |
 | NonCompliant      | Número de dispositivos que não conseguiram aplicar uma ou mais definições de políticas de conformidade do dispositivo visadas pelo administrador ou nos quais o utilizador ainda não está a cumprir as políticas visadas pelo administrador. | 7        |
-| Erro             | Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                             | 3        |
+| Error             | Número de dispositivos que não conseguiram comunicar com o Intune ou o Azure AD e devolveram uma mensagem de erro.                                                                             | 3        |
 ## <a name="compliancestates"></a>complianceStates
 
 |      Propriedade      |                       Description                      |
@@ -116,11 +116,11 @@ A tabela seguinte apresenta um resumo dos estados de atribuição de políticas 
 
 |  complianceStatus  |                       Description                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    Desconhecida.                                                                        |
-|    conformidade       |    Compatível.                                                                      |
+|    Desconhecido         |    Desconhecida.                                                                        |
+|    Compatível       |    Compatível.                                                                      |
 |    Não compatível    |       O dispositivo não está em conformidade e está bloqueado a partir de recursos da empresa.             |
 |    Conflito        |    Está em conflito com outras regras.                                                      |
-|    Erro           |       Error.                                                                       |
+|    Error           |       Error.                                                                       |
 |    ConfigManager   |    Gerido pelo Config Manager.                                                      |
 |    InGracePeriod   |       O dispositivo não está em conformidade, mas ainda tem acesso aos recursos da empresa          |
 
@@ -163,8 +163,8 @@ A entidade **DeviceConfigurationProfileDeviceActivity** apresenta uma lista do n
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703 |
 | Pendente   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123      |
-| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12       |
-| Erro     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10       |
+| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12       |
+| Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10       |
 | Falhou    | Número de Dispositivos exclusivos no estado com falhas.                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
@@ -174,8 +174,8 @@ A entidade **DeviceConfigurationProfileUserActivity** apresenta uma lista do nú
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados.  | 20160703  |
 | Pendente  | Número de Utilizadores exclusivos no estado pendente.  | 123  |
-| Bem sucedida  | Número de Utilizadores exclusivos no estado com êxito.  | 12  |
-| Erro  | Número de Utilizadores exclusivos no estado com erros.  | 10  |
+| Succeeded  | Número de Utilizadores exclusivos no estado com êxito.  | 12  |
+| Error  | Número de Utilizadores exclusivos no estado com erros.  | 10  |
 | Falhou  | Número de Utilizadores exclusivos no estado com falhas.  | 2  |
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
@@ -208,7 +208,7 @@ A entidade **DeviceRegistrationState** representa o tipo de registo referenciado
 |    ApprovalPending                   |    Aprovação pendente                                                                                                                                                                |
 |    CertificateReset                  |    Repor Certificado                                                                                                                                                               |
 |    NotRegisteredPendingEnrollment    |    Não registado, inscrição pendente                                                                                                                                               |
-|    Unknown                           |    Estado desconhecido                                                                                                                                                                   |
+|    Desconhecido                           |    Estado desconhecido                                                                                                                                                                   |
 
 ## <a name="devices"></a>dispositivos
 A entidade **device** lista todos os dispositivos inscritos sob gestão e as propriedades correspondentes.
@@ -235,7 +235,7 @@ A entidade **device** lista todos os dispositivos inscritos sob gestão e as pro
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | O Identificador Exclusivo para o utilizador associado ao dispositivo.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | A data e hora em UTC em que este dispositivo foi modificado pela última vez no armazém de dados.                                                                                                       |
-| Fabricante               | Fabricante do dispositivo                                                                                                                                                             |
+| Manufacturer               | Fabricante do dispositivo                                                                                                                                                             |
 | Model                      | Modelo do dispositivo                                                                                                                                                                    |
 | OperatingSystem            | Sistema operativo do dispositivo. Windows, iOS/iPadOS, etc.                                                                                                                                   |
 | IsDeleted                  | O binário para mostrar se o dispositivo é eliminado ou não.                                                                                                                                 |
@@ -287,7 +287,7 @@ A entidade **deviceType** representa o tipo de dispositivo referenciado por outr
 | 18           | AndroidEnterprise | Dispositivo empresarial Android.                          |
 | 100          | Blackberry        | Dispositivo Blackberry                                   |
 | 101          | Palm              | Dispositivo Palm                                         |
-| 255          | Unknown           | Tipo de dispositivo desconhecido                                 |
+| 255          | Desconhecido           | Tipo de dispositivo desconhecido                                 |
 
 ## <a name="deviceenrollmenttypes"></a>deviceEnrollmentTypes
 A entidade **deviceEnrollmentType** indica como um dispositivo foi inscrito. O tipo de inscrição captura o método de inscrição. Os exemplos listam os diferentes tipos de inscrição e o seu significado.
@@ -302,7 +302,7 @@ A entidade **deviceEnrollmentType** indica como um dispositivo foi inscrito. O t
 
 | enrollmentTypeID |                Nome                |                                        Description                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
-| 0                | Unknown                            | Não foi recolhido o tipo de inscrição                                                      |
+| 0                | Desconhecido                            | Não foi recolhido o tipo de inscrição                                                      |
 | 1                | UserEnrollment                     | Inscrição controlada pelo utilizador através do canal BYOD.                                           |
 | 2                | DeviceEnrollmentManager            | Inscrição de utilizadores com uma conta de gestor de inscrição de dispositivos.                              |
 | 3                | AppleBulkWithUser                  | Inscrição em massa da Apple com o desafio de utilizador. (DEP, Apple Configurator)                   |
@@ -358,7 +358,7 @@ A entidade **de Categoria de Falhas de Matrícula** indica porque é que uma mat
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Não Aplicável                  | A categoria de falha de inscrição não é aplicável.                                                            |
 | Não disponível                   | A categoria de falha de inscrição não está disponível.                                                             |
-| Unknown                         | Erro desconhecido.                                                                                                |
+| Desconhecido                         | Erro desconhecido.                                                                                                |
 | Autenticação                  | A autenticação falhou.                                                                                        |
 | Autorização                   | A chamada foi autenticada, mas não autorizada a inscrever-se.                                                         |
 | Validação de Contas               | Não validou a conta para inscrição. (Conta bloqueada, inscrição não ativada)                      |
@@ -385,7 +385,7 @@ A entidade **RegistrationFailureReason** indica uma razão mais detalhada para u
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Não Aplicável                   | O motivo da falha de inscrição não é aplicável.                                                                                                                                                       |
 | Não disponível                    | O motivo da falha de inscrição não está disponível.                                                                                                                                                        |
-| Unknown                          | Erro desconhecido.                                                                                                                                                                                         |
+| Desconhecido                          | Erro desconhecido.                                                                                                                                                                                         |
 | UserNotLicensed                  | O utilizador não foi encontrado em Intune ou não tem uma licença válida.                                                                                                                                     |
 | UserUnknown                      | O utilizador não é conhecido de Intune.                                                                                                                                                                           |
 | BulkAlreadyEnrolledDevice        | Apenas um utilizador pode inscrever um dispositivo. Este dispositivo foi previamente matriculado por outro utilizador.                                                                                                                |
@@ -437,7 +437,7 @@ A entidade **MamApplication** lista aplicações Linha de Negócio (LOB) que sã
 | mamApplicationKey |Identificador único da aplicação MAM. | 432 |
 | mamApplicationName |Nome da aplicação MAM. |Nome da exemplo da aplicação MAM |
 | mamApplicationId |Id de aplicação da aplicação MAM. | 123 |
-| IsDeleted |Indica se este registo da aplicação MAM foi atualizado. <br>True: a aplicação MAM tem um novo registo com campos atualizados nesta tabela. <br>False: o registo mais recente desta aplicação MAM. |Verdadeiro/Falso |
+| IsDeleted |Indica se este registo da aplicação MAM foi atualizado. <br>True: a aplicação MAM tem um novo registo com campos atualizados nesta tabela. <br>False: o registo mais recente desta aplicação MAM. |True/False |
 | StartDateInclusiveUTC |Data e hora em UTC em que esta aplicação MAM foi criada no armazém de dados. |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |Data e hora em UTC em que a propriedade IsDeleted foi alterada para True. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Data e hora em UTC em que esta aplicação MAM foi modificada pela última vez no armazém de dados. |11/23/2016 12:00:00 AM |
@@ -462,7 +462,7 @@ A entidade **MamApplicationInstance** lista aplicações geridas da Gestão de A
 | mamDeviceId | Id do dispositivo com o qual a MAM Application Instance está associada.   | 11/23/2016 12:00:00 AM   |
 | mamDeviceType | Tipo de dispositivo do dispositivo com o qual a MAM Application Instance está associada.   | 11/23/2016 12:00:00 AM   |
 | mamDeviceName | Nome do dispositivo com o qual a MAM Application Instance está associada.   | 11/23/2016 12:00:00 AM   |
-|         IsDeleted          | Indica se este registo de instância da aplicação MAM foi atualizado. <br>True: esta instância de aplicação MAM tem um novo registo com campos atualizados nesta tabela. <br>False: o registo mais recente desta instância da aplicação MAM. |              Verdadeiro/Falso              |
+|         IsDeleted          | Indica se este registo de instância da aplicação MAM foi atualizado. <br>True: esta instância de aplicação MAM tem um novo registo com campos atualizados nesta tabela. <br>False: o registo mais recente desta instância da aplicação MAM. |              True/False              |
 |   StartDateInclusiveUtc    |                                                              Data e hora em UTC em que esta instância da aplicação MAM foi criada no armazém de dados.                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             Data e hora em UTC em que a propriedade IsDeleted foi alterada para True.                                                                              |        11/23/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           Data e hora em UTC em que esta instância da aplicação MAM foi modificada pela última vez no armazém de dados.                                                            |        11/23/2016 12:00:00 AM        |
@@ -528,7 +528,7 @@ A entidade **managementAgentType** representa os agentes utilizados para gerir u
 | 8                     | ConfigManagerClient               | O dispositivo é gerido pelo agente 'Gestor de Configuração'     |
 | 10                    | ConfigurationManagerClientMdm     | O dispositivo é gerido pelo Configuration Manager e MDM.                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | O dispositivo é gerido por Configuração Manager, MDM e Exchange Ative Sync.               |
-| 16                    | Unknown                           | Tipo de agente de gestão desconhecido                                              |
+| 16                    | Desconhecido                           | Tipo de agente de gestão desconhecido                                              |
 | 32                    | Jamf                              | Os atributos do dispositivo são obtidos a partir do Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  O dispositivo é gerido pelo CloudDPC da Google.                                 |
 
@@ -600,7 +600,7 @@ A entidade **Policy** apresenta uma lista de perfis de configuração de disposi
 | PolicyId                   | Identificador exclusivo da Política no armazém de dados.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | Nome da Política.                                                                                                                                    | "Linha de Base do Windows 10"                |
 | PolicyVersion              | Versão da Política. Quando a política é editada ou alterada, é criada uma versão mais recente.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Indica se o registo da Política foi atualizado.  True – a política tem um novo registo com campos atualizados.  False – o registo mais recente da política. | Verdadeiro/Falso                           |
+| IsDeleted                  | Indica se o registo da Política foi atualizado.  True – a política tem um novo registo com campos atualizados.  False – o registo mais recente da política. | True/False                           |
 | StartDateInclusiveUTC      | Data e hora em UTC em que a política foi criada no armazém de dados.                                                                              | 11/23/2016 0:00                      |
 | DeletedDateUTC             | Data e hora em UTC em que a propriedade IsDeleted foi alterada para True.                                                                                                   | 11/23/2016 0:00                      |
 | RowLastModifiedDateTimeUTC | Data e hora em UTC em que a política foi modificada pela última vez no armazém de dados.                                                                        | 11/23/2016 0:00                      |
@@ -612,9 +612,9 @@ A tabela seguinte mostra o número de dispositivos no estado com êxito, pendent
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703              |
 | Pendente   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123                   |
-| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                    |
+| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                    |
 | PolicyKey | A chave de Política pode ser acompanhada pela Política para obter o policyName.                                  | Linha de base do Windows 10 |
-| Erro     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                    |
+| Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                    |
 | Falhou    | Número de Dispositivos exclusivos no estado com falhas.                                                     | 2                     |
 
 ## <a name="policyplatformtypes"></a>policyPlatformTypes
@@ -634,8 +634,8 @@ A entidade **PolicyTypeActivity** apresenta uma lista do número cumulativo de d
 | PolicyKey     | A chave de política pode ser acompanhada pela Política para obter o policyName.                                | Linha de base do Windows 10         |
 | PolicyTypeKey | O tipo de Chave de Política pode ser acompanhado do Tipo de Política para obter o nome do tipo de política.             | Política de Compatibilidade do Windows 10 |
 | Pendente       | Número de dispositivos exclusivos no estado pendente.                                                    | 123                         |
-| Bem sucedida     | Número de dispositivos exclusivos no estado com êxito.                                                    | 12                          |
-| Erro         | Número de dispositivos exclusivos no estado com erros.                                                      | 10                          |
+| Succeeded     | Número de dispositivos exclusivos no estado com êxito.                                                    | 12                          |
+| Error         | Número de dispositivos exclusivos no estado com erros.                                                      | 10                          |
 | Falhou        | Número de dispositivos exclusivos no estado com falhas.                                                     | 2                           |
 
 ## <a name="policytypes"></a>policyTypes
@@ -654,9 +654,9 @@ A tabela seguinte mostra o número de utilizadores no estado com êxito, pendent
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | Data-chave de quando a entrada do Perfil de Configuração do Dispositivo foi registada no armazém de dados. | 20160703            |
 | Pendente   | Número de Dispositivos exclusivos no estado pendente.                                                    | 123                 |
-| Bem sucedida | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                  |
+| Succeeded | Número de Dispositivos exclusivos no estado com êxito.                                                    | 12                  |
 | PolicyKey | A chave de política pode ser acompanhada pela Política para obter o policyName.                                | Linha de base do Windows 10 |
-| Erro     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                  |
+| Error     | Número de Dispositivos exclusivos no estado com erros.                                                      | 10                  |
 
 ## <a name="termsandconditions"></a>termsAndConditions
 A entidade **termsAndConditions** representa os metadados e o conteúdo de uma determinada política de Termos e Condições (T&C). O conteúdo das políticas de T&C é apresentado aos utilizadores após a sua primeira tentativa de inscrição no Intune e, em seguida, após as edições em que um administrador tiver exigido uma nova aceitação. Permitem que os administradores comuniquem as cláusulas que um utilizador tem de aceitar para inscrever dispositivos no Intune.
@@ -683,7 +683,7 @@ A entidade **UserDeviceAssociation** contém associações de dispositivos do ut
 | UserKey            | Identificador exclusivo do utilizador no armazém de dados.   (Chave de substituição).                            | 123             |
 | DeviceKey          | Identificador exclusivo do dispositivo no armazém de dados.                                             | 123             |
 | CreatedDateTimeUTC | Data e hora em que a associação de dispositivos do utilizador foi criada. Utiliza o formato UTC.                     | 11/23/2016 0:00 |
-| IsDeleted          | Indica que o utilizador anulou a inscrição desse dispositivo e essa associação já não está atualizada. | Verdadeiro/Falso      |
+| IsDeleted          | Indica que o utilizador anulou a inscrição desse dispositivo e essa associação já não está atualizada. | True/False      |
 | EndedDateTimeUTC   | Data e hora em UTC em que a propriedade IsDeleted foi alterada para True.                                               | 6/23/2017 0:00  |
 
 ## <a name="users"></a>utilizadores
@@ -698,8 +698,8 @@ A coleção de entidades **user** contém dados do utilizador. Estes registos in
 | UserEmail                  | Endereço de e-mail do utilizador.                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | O nome principal do utilizador.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nome a apresentar do utilizador.                                                                                                                                                                                                      | João                                 |
-| IntuneLicensed             | Especifica se este utilizador tem ou não licença do Intune.                                                                                                                                                                              | Verdadeiro/Falso                           |
-| IsDeleted                  | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. | Verdadeiro/Falso                           |
+| IntuneLicensed             | Especifica se este utilizador tem ou não licença do Intune.                                                                                                                                                                              | True/False                           |
+| IsDeleted                  | Indica se todas as licenças do utilizador expiraram e se o utilizador foi, por conseguinte, removido do Intune. Para um único registo, este sinalizador não se altera. Em vez disso, é criado um novo registo para um novo estado do utilizador. | True/False                           |
 | RowLastModifiedDateTimeUTC | Data e hora em UTC quando o registo foi modificado pela última vez no armazém de dados                                                                                                                                                 | 11/23/2016 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances

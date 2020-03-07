@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c7709d4162b065952d2f2f7acc778739ccb34eb7
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609322"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369693"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Aplicações protegidas microsoft Intune  
 

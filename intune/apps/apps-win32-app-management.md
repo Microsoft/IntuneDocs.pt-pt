@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 516d5148ac44d72aaacf1d670d2d4f0345823d49
-ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78260287"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369341"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Autónomo - Gestão de aplicações Win32
 

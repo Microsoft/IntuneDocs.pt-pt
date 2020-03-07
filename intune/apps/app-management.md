@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
-ms.translationtype: MT
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
+ms.translationtype: HT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369176"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -51,7 +51,7 @@ A MAM do Intune suporta dois tipos de configurações:
 
 O Intune oferece várias funcionalidades para o ajudar a obter as aplicações de que precisa, nos dispositivos nos quais quer executá-las. A seguinte tabela mostra um resumo das funcionalidades de gestão de aplicações.
 
-|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Wnodows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Adicionar e atribuir aplicações a dispositivos e utilizadores | Sim | Sim | Sim | Sim | Sim |
 | Atribuir aplicações a dispositivos não inscritos no Intune | Sim | Sim | Não | Não | Não |
@@ -85,7 +85,7 @@ Pode encontrar a maioria das informações relacionadas com aplicações na carg
 
 As próximas quatro secções descrevem as opções disponíveis no painel **apps.**
 
-### <a name="manage"></a>Gerir o Endpoint Protection do
+### <a name="manage"></a>Gerir
 - **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
   - [Adicionar aplicações](apps-add.md).
   - [Atribuir aplicações](apps-deploy.md).

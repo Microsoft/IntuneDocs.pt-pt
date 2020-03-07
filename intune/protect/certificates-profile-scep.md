@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8a8daab16d0b595444ff5cb13f97cd2703127340
-ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "78181896"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369885"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Criar e atribuir perfis de certificado SCEP em Intune
 
@@ -137,7 +137,7 @@ Depois de [configurar](certificates-scep-configure.md) a sua infraestrutura para
 
         Selecione entre os atributos disponíveis:
 
-        - **Endereço de e-mail**
+        - **Endereço de correio eletrónico**
         - **Nome principal do utilizador (UPN)**
 
         Por exemplo, os tipos de certificados de utilizador podem incluir o nome principal do utilizador (UPN) no nome alternativo do assunto. Se um certificado de cliente for utilizado para autenticar um Servidor de Políticas de Rede, defina o nome alternativo do requerente como UPN.
@@ -148,7 +148,7 @@ Depois de [configurar](certificates-scep-configure.md) a sua infraestrutura para
 
         Os atributos disponíveis incluem:
 
-        - **Endereço de e-mail**
+        - **Endereço de correio eletrónico**
         - **Nome principal do utilizador (UPN)**
         - **DNS**
 
