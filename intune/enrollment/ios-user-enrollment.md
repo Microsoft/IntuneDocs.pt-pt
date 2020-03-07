@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415254"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369832"
 ---
 # <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>Configurar iOS/iPadOS e iPadOS User Registration (pré-visualização)
 
