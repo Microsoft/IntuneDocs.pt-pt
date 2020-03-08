@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9092b40b25ccc19c8b0de97b23c96a845d578df7
-ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.openlocfilehash: 6fc2f830f4406f5ba1017d5172d3d683814d9ca0
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78256409"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856249"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Gerir o acesso à web utilizando o Microsoft Edge com o Microsoft Intune
 
@@ -181,14 +181,14 @@ Utilize o seguinte par chave/valor para configurar um atalho inicial:
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Especifique um URL válido. Os URLs incorretos são bloqueados como medida de segurança.<br>**Exemplo:**  <`https://www.bing.com`>     |
 
 ## <a name="configure-multiple-top-site-shortcuts-for-new-tab-pages-in-microsoft-edge"></a>Configure vários atalhos de topo para novas páginas de separadores no Microsoft Edge 
-Da mesma forma, configurar um atalho inicial, pode configurar vários atalhos de topo do site em novas páginas de separadores no Microsoft Edge. O utilizador não pode editar ou eliminar estes atalhos num contexto gerido.
+Da mesma forma, configurar um atalho inicial, pode configurar vários atalhos de topo do site em novas páginas de separadores no Microsoft Edge. O utilizador não pode editar ou eliminar estes atalhos num contexto gerido. Nota: pode configurar um total de 8 atalhos, incluindo um atalho de página inicial. Se configurar um atalho inicial, isso irá anular o primeiro site de topo configurado. 
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.managedTopSites   |    Especifique o conjunto de URLs de valor. Cada atalho do site superior consiste num título e URL. Separe o título e a URL com o carácter `|`. Por exemplo: <br> `GitHub | https://github.com/||LinkedIn|https://www.linkedin.com`
+|    com.microsoft.intune.mam.managedbrowser.managedTopSites   |    Especifique o conjunto de URLs de valor. Cada atalho do site superior consiste num título e URL. Separe o título e a URL com o carácter `|`. Por exemplo: <br> `GitHub | https://github.com/||LinkedIn|https://www.linkedin.com`    |
 
 ## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Configure o logótipo da sua organização e a cor da marca para novas páginas de separadores no Microsoft Edge
 
@@ -237,8 +237,17 @@ Utilize o seguinte par chave/valor para configurar os marcadores geridos:
 Por padrão, os seus utilizadores são mostrados os sites MyApps que estão configurados dentro de uma pasta dentro dos marcadores do Microsoft Edge. A pasta está marcada com o nome da sua organização.
 
 |    Chave    |    Valor    |
-|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **True** shows MyApps dentro dos bookmarks do Microsoft Edge.<p>**Falsas** ocultas MyApps dentro do Microsoft Edge.    |
+    
+## <a name="use-https-protocol-as-default"></a>Utilize o protocolo HTTPS como padrão
+
+Pode configurar o microsoft Edge mobile para o padrão de utilização do protocolo HTTPS quando o utilizador não especificar um. Geralmente, esta é considerada uma boa prática. Utilize o seguinte par chave/valor para ativar https como o protocolo predefinido:
+
+|    Chave    |    Valor    |
+|---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.defaultHTTPS`     |     **True** define o protocolo padrão para usar HTTPS     |
+
 
 ## <a name="specify-allowed-or-blocked-sites-list-for-microsoft-edge"></a>Especificar lista de sites permitidos ou bloqueados para o Microsoft Edge
 Pode utilizar a configuração da aplicação para definir quais os sites a que os seus utilizadores podem aceder quando utilizar o seu perfil de trabalho. Se utilizar uma lista de autorizações, os seus utilizadores só podem aceder aos sites que enumerou explicitamente. Se utilizar uma lista bloqueada, os seus utilizadores podem aceder a todos os sites, exceto aqueles que bloqueou explicitamente. Só deve impor uma lista permitida ou bloqueada, não as duas. Se impor os dois, a lista permitida é honrada.  
@@ -291,28 +300,29 @@ Com o modelo de dupla identidade integrado no Microsoft Edge, pode permitir uma 
 Utilize o seguinte par chave/valor para configurar se estas transições suaves são permitidas:
 
 |    Chave    |    Valor    |
-|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------------------------------------------------------------|-------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (padrão) permite que o Microsoft Edge transe os utilizadores para o seu contexto pessoal para abrir sites bloqueados.<p>**Falso** impede o Microsoft Edge de transitar os utilizadores. Os utilizadores são simplesmente mostrados uma mensagem afirmando que o site a que estão a tentar aceder está bloqueado.    |
 
 ## <a name="disable-inprivate-and-microsoft-accounts-msa-to-restrict-personal-browsing"></a>Desativar contas inprivadas e microsoft (MSA) para restringir a navegação pessoal
-Alguns clientes em indústrias altamente reguladas que estão a usar uma VPN por app com o Microsoft Edge podem querer examinar os utilizadores para navegar apenas no seu contexto AAD. Pode utilizar as seguintes definições de config de aplicação para os seus dispositivos MDM para o conseguir. Esta funcionalidade não está disponível para dispositivos matriculados em MAM. 
+Alguns clientes de indústrias altamente reguladas que estão a usar o Microsoft Edge podem querer pesquisar os utilizadores apenas no seu contexto AAD. Pode utilizar as seguintes definições de config de aplicação para desativar as Contas microsoft ou a navegação inPrivate.
 
 |    Chave    |    Valor    |
 |-------------------------------------------------------------------|-------------------------------------------------------|
 |     `com.microsoft.intune.mam.managedbrowser.disabledFeatures`    |    **inprivate** irá desativar navegador InPrivate. <br> **A msa** irá desativar a capacidade dos utilizadores de adicionarem contas pessoais de MSA ao Microsoft Edge.<br> Para desativar as contas InPrivate e MSA, use `inprivate| msa`    |  
 
 
-Também pode restringir os utilizadores de navegar em dispositivos MDM do Microsoft Edge **apenas** quando o utilizador é contratado com a sua conta de trabalho AAD. Pode saber mais sobre as chaves para configurar o modo apenas para o Microsoft Edge aqui:
+Caso não esteja a implementar políticas de proteção de aplicações, também pode restringir os utilizadores a utilizarem as Contas Microsoft e apenas permitir a navegação a partir de uma conta de trabalho ou de escola em dispositivos matriculados. Pode saber mais sobre as chaves para configurar o modo apenas para o Microsoft Edge aqui:
 - [Android org-account](https://docs.microsoft.com/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps)
 - [iOS org-accounts-only](https://docs.microsoft.com/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-multi-identity-apps)
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>Abrir links restritos diretamente nas páginas de separadores InPrivate
 
-Pode configurar se as ligações restritas devem ser abertas diretamente na navegação InPrivate, o que proporciona aos utilizadores uma experiência de navegação mais perfeita. Isto pouparia aos utilizadores o passo de terem de transitar para o seu contexto pessoal para verem um site. A navegação inPrivate é considerada não gerida, pelo que os utilizadores não poderão aceder ao modo de navegação InPrivate.
+Pode configurar se as ligações restritas devem ser abertas diretamente na navegação InPrivate, o que proporciona aos utilizadores uma experiência de navegação mais perfeita. Isto pouparia aos utilizadores o passo de terem de transitar para o seu contexto pessoal para verem um site. A navegação inPrivate é considerada não gerida, pelo que os utilizadores não poderão aceder ao modo de navegação InPrivate.  Nota: Para que esta definição tenha efeito, também deve ter configurado a definição acima `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock` **verdadeiramente**.
 
 |    Chave    |    Valor    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlocked`    |    **True** abrirá automaticamente os sites diretamente num separador InPrivate, sem pedir ao utilizador que faça a troca para a sua conta pessoal. <p> **Falso** (predefinido) bloqueará o site dentro do Microsoft Edge e o utilizador será solicitado a mudar para a sua conta pessoal para visualizar.    |
+
 
 ## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>Desative as funcionalidades do Microsoft Edge para personalizar a experiência final do utilizador para as necessidades da sua organização
 
