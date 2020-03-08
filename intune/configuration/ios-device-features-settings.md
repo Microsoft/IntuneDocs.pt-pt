@@ -17,11 +17,11 @@ search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7f19ccfb6949dbfa0de62a8b711436ab9cde8c9c
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512947"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369854"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-iosipados-features-in-intune"></a>Definições de dispositivos iOS e iPadOS para utilizar funcionalidades comuns do iOS/iPadOS em Intune
 

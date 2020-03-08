@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: afcb49447aa044b730d2271603d4966466318193
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782025"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369978"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Enviar notificações personalizadas em Intune
 

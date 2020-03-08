@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415127"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78368561"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configurar a inscrição para dispositivos Windows
 
@@ -72,7 +72,7 @@ Crie registos de recursos DNS CNAME para o domínio da sua empresa. Por exemplo,
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores receberão um pedido para introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.com.
 
-|Type|Nome do anfitrião|Aponta para|TTL|
+|Tipo|Nome do anfitrião|Aponta para|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.dominio_empresa.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hora|
 |CNAME|EnterpriseRegistration.dominio_empresa.com|EnterpriseRegistration.windows.net|1 hora|
@@ -85,7 +85,7 @@ Se a empresa utilizar mais do que um sufixo UPN, tem de criar um CNAME para cada
 
 Os administradores de DNS da Contoso devem criar os seguintes CNAMEs:
 
-|Type|Nome do anfitrião|Aponta para|TTL|  
+|Tipo|Nome do anfitrião|Aponta para|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hora|
@@ -121,7 +121,7 @@ Para obter mais informações sobre as tarefas do utilizador final, veja [Recurs
 ## <a name="registration-and-enrollment-cnames"></a>Inscrições e Inscrições CNAMEs
 O Azure Ative Directory tem um CNAME diferente que utiliza para o registo de dispositivos iOS/iPadOS, Android e Windows. O acesso condicional intonizado requer a inscrição de dispositivos, também chamados de "local de trabalho aderido". Se planeia utilizar acesso condicional, deve também configurar o EnterpriseRegistration CNAME para cada nome da empresa que tenha.
 
-| Type | Nome do anfitrião | Aponta para | TTL |
+| Tipo | Nome do anfitrião | Aponta para | TTL |
 | --- | --- | --- | --- |
 | NOME | Registo empresarial. company_domain.com | EnterpriseRegistration.windows.net | 1 hora|
 
@@ -133,7 +133,7 @@ Esta secção aplica-se aos clientes da nuvem do governo dos EUA.
 
 Apesar de a criação de entradas DNS CNAME ser opcional, os registos CNAME facilitam a inscrição para os utilizadores. Se não for encontrado nenhum registo CNAME de inscrição, os utilizadores são solicitados a introduzir manualmente o nome do servidor MDM, enrollment.manage.microsoft.us.
 
-| Type | Nome do anfitrião | Aponta para | TTL |
+| Tipo | Nome do anfitrião | Aponta para | TTL |
 | --- | --- | --- | --- |
 | CNAME | EnterpriseEnrollment.dominio_empresa.com | EnterpriseEnrollment-s.manage.microsoft.us | 1 hora|
 |CNAME | EnterpriseRegistration.dominio_empresa.com | EnterpriseRegistration.windows.net | 1 hora |

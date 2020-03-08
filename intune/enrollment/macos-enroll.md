@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207184"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369037"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configurar a inscrição para dispositivos macOS no Intune
 
@@ -37,7 +37,7 @@ Enquanto administrador do Intune, pode configurar a inscrição para dispositivo
 
 Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os seguintes pré-requisitos:
 
-- [Verifique se o dispositivo está qualificado para o registro de dispositivo da Apple](https://support.apple.com/en-us/HT204142#eligibility).
+- [Certifique-se de que o seu dispositivo é elegível para a inscrição do dispositivo Apple](https://support.apple.com/en-us/HT204142#eligibility).
 - [Configurar domínios](../fundamentals/custom-domain-name-configure.md)
 - [Definir a Autoridade de MDM](../fundamentals/mdm-authority-set.md)
 - [Criar grupos](../fundamentals/groups-add.md)
@@ -47,11 +47,11 @@ Antes de configurar a inscrição de dispositivos macOS, tem de cumprir os segui
 
 ## <a name="user-owned-macos-devices-byod"></a>Dispositivos Mac OS propriedade do utilizador (BYOD)
 
-Você pode permitir que os usuários registrem seus próprios dispositivos pessoais no gerenciamento do Intune. Isso é conhecido como "Traga seu próprio dispositivo" ou BYOD. Depois de concluir os pré-requisitos e as licenças de usuário atribuídas, os usuários poderão registrar seus dispositivos:
+Pode permitir que os utilizadores inscrevam os seus próprios dispositivos pessoais na gestão intune. Isto é conhecido como "traga o seu próprio dispositivo" ou BYOD. Depois de ter preenchido os pré-requisitos e as licenças de utilizador atribuídas, os seus utilizadores podem inscrever os seus dispositivos através de:
 - Aceder ao [site do Portal da Empresa](https://portal.manage.microsoft.com) ou ao
-- baixando o aplicativo Mac Portal da Empresa em [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac).
+- descarregando a aplicação Mac Company Portal em [aka.ms/EnrollMyMac.](https://aka.ms/EnrollMyMac)
 
-Você também pode enviar aos usuários um link para as etapas de registro online: [registrar seu dispositivo MacOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Também pode enviar aos seus utilizadores um link para as etapas de inscrição online: [Inscreva o seu dispositivo macOS no Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Para obter informações sobre outras tarefas do utilizador final, veja estes artigos:
 
@@ -80,12 +80,12 @@ Para a VMware Fusion, precisa de [editar o ficheiro .vmx](https://kb.vmware.com/
 ## <a name="user-approved-enrollment"></a>Inscrição do Utilizador Aprovado
 A inscrição na MDM do Utilizador Aprovado é um tipo de inscrição de macOS que pode utilizar para gerir determinadas definições relacionadas com a segurança. Para obter mais informações, veja a [documentação de suporte da Apple](https://support.apple.com/HT208019).  
  
-Durante o processo de registro BYOD, o usuário será solicitado a aprovar manualmente o perfil de gerenciamento da Apple. As instruções são fornecidas no aplicativo Portal da Empresa para macOS. Embora a aprovação do perfil de gerenciamento não seja necessária para concluir o registro, o Intune recomenda registros aprovados pelo usuário. Se o usuário não aprovar o perfil durante o registro, o usuário poderá acessar as **preferências do sistema** > **perfis**, escolher o perfil de gerenciamento e selecionar **aprovar**.    
+Durante o processo de inscrição BYOD, o utilizador será solicitado a aprovar manualmente o perfil de gestão da Apple. As instruções são fornecidas na aplicação Portal da Empresa para o macOS. Embora a aprovação do perfil de gestão não seja necessária para completar a inscrição, intune recomenda inscrições aprovadas pelo utilizador. Se o utilizador não aprovar o perfil durante a inscrição, o utilizador pode ir às **Preferências** do Sistema > **Perfis,** escolher o perfil de gestão e selecionar **Aprovar**.    
 
-### <a name="find-out-if-a-device-is-user-approved"></a>Descubra se um dispositivo foi aprovado pelo usuário
-1. Entre no centro de [Administração do Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Escolha **dispositivos** > **todos os dispositivos**> escolha o dispositivo > **hardware**.
-3. Verifique o campo **registro aprovado pelo usuário** .
+### <a name="find-out-if-a-device-is-user-approved"></a>Descubra se um dispositivo é Aprovado pelo Utilizador
+1. Inscreva-se no [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Escolha **Dispositivos** > **Todos os dispositivos**> escolha o dispositivo > **Hardware**.
+3. Verifique o campo de **inscrição aprovado** pelo Utilizador.
 
 
 ## <a name="next-steps"></a>Próximos passos
