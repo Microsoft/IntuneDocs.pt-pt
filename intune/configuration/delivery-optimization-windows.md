@@ -16,11 +16,11 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
 ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77124814"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369948"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Definições de otimização de entrega no Microsoft Intune
 
@@ -87,7 +87,7 @@ A Otimização da Entrega foi previamente configurada como parte dos Anéis de A
     3. Nas definições, desajuste o modo de transferência de **otimização** da entrega para **Não configurado**.
     4. **OK** > **Guarde** as suas alterações.
 
-## <a name="next-steps"></a>Passos Seguintes
+## <a name="next-steps"></a>Próximos passos
 
 [Atribuir o perfil](device-profile-assign.md) e [monitorizar o seu estado.](device-profile-monitor.md)  
 Consulte as definições de [otimização](../delivery-optimization-settings.md) da entrega para Intune.
