@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: bef6f8a00b0b5df64dd1c65ad048fe8331911979
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781922"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856154"
 ---
 # <a name="see-device-details-in-intune"></a>Consultar os detalhes do dispositivo no Intune
 
@@ -45,7 +45,7 @@ Este artigo mostra como ver todos os seus dispositivos e as respetivas proprieda
       - [Repor código de acesso](device-passcode-reset.md)
       - [Reiniciar](device-restart.md) (apenas no Windows)
       - [Começar do Zero](device-fresh-start.md) (apenas no Windows)
-      - [Reset do piloto automático]() (apenas para o Windows)
+      - [Reset do piloto automático](/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset) (apenas para o Windows)
       - [Sondagem rápida](../configuration/device-restrictions-windows-10.md) (apenas windows 10)
       - [Digitalização completa](../configuration/device-restrictions-windows-10.md) (apenas windows 10)
        - [Rename device (Mudar o nome de dispositivos)](device-rename.md)
@@ -71,7 +71,7 @@ Dependendo da transportadora utilizada pelos dispositivos, nem todos os detalhes
 |Número de série|O número de série dado pelo fabricante do dispositivo.|Windows, iOS|
 |Dispositivo partilhado|Se definido como **Sim**, o dispositivo é partilhado por mais do que um utilizador.|Windows, iOS|
 |Inscrição de utilizador aprovado|Se **Sim**, então o dispositivo tem o utilizador aprovado a inscrição que permite aos administradores gerir certas definições de segurança no dispositivo.|Windows, iOS|
-|Sistema operativo|O sistema operativo utilizado no dispositivo.|Windows, iOS|
+|Sistema Operativo|O sistema operativo utilizado no dispositivo.|Windows, iOS|
 |Versão do sistema operativo|A versão do sistema operativo no dispositivo.|Windows, iOS|
 |Idioma do sistema operativo|O idioma definido para o sistema operativo no dispositivo.|Windows, iOS|
 |Número de compilação|O número de construção do sistema operativo.|Android|
@@ -80,7 +80,7 @@ Dependendo da transportadora utilizada pelos dispositivos, nem todos os detalhes
 |Espaço de armazenamento livre|O espaço de armazenamento não utilizado no dispositivo (em gigabytes).|Windows, iOS|
 |IMEI|A Identidade Internacional do Equipamento Móvel do dispositivo.|Windows, iOS/iPadOS, Android|
 |MEID|O identificador de equipamento móvel do dispositivo.|Windows, iOS/iPadOS, Android|
-|Fabricante|O fabricante do dispositivo.|Windows, iOS/iPadOS, Android|
+|Manufacturer|O fabricante do dispositivo.|Windows, iOS/iPadOS, Android|
 |Model|O modelo do dispositivo.|Windows, iOS/iPadOS, Android|
 |Número de telefone|O número de telemóvel atribuído ao dispositivo.|Windows, iOS/iPadOS, Android*|
 |Operadora subscrita|A operadora sem fios do dispositivo.|Windows, iOS/iPadOS, Android|

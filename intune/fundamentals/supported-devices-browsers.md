@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 536f689a009f3e7e0128c350bafd3bf1340aeaaa
+ms.openlocfilehash: 1b8b6120098ff7c607148173ce0dd3a5ddffc379
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78369438"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78892789"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Sistemas operativos e browsers no Intune
 
@@ -95,7 +95,7 @@ Um [software cliente do Intune](manage-windows-pcs-with-microsoft-intune.md) pod
 > [!Note]
 > A Microsoft anunciou que o suporte do Windows 7 termina a 14 de janeiro de 2020. Nesta data, o Intune também retira o suporte para dispositivos com o Windows 7.
 >
-> Para mais informações, consulte o [plano Intune para a mudança: fim do suporte para o Windows 7](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-).
+> Para mais informações, consulte o [plano Intune para a mudança: fim do suporte para o Windows 7](whats-new.md#windows-7-ends-extended-support).
 >
 > A Microsoft Intune vai retirar o suporte para a consola Intune baseada em Silverlight a 15 de outubro de 2020. Esta reforma inclui o suporte final para o cliente de software pc configurado pela consola Silverlight (também conhecido como agente pc).
 >

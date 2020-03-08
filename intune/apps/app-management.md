@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2020
+ms.date: 03/05/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c22fafce6583dd1e58d61e3fa8e6077b70998588
+ms.openlocfilehash: 2c7378540d1ec9e19db57baae21c999c80b4d1d9
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78369176"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856251"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>O que é a gestão de aplicações do Microsoft Intune?
 
@@ -83,55 +83,42 @@ Pode encontrar a maioria das informações relacionadas com aplicações na carg
 
     ![O painel de trabalho das Apps](./media/app-management/apps-workload.png)
 
-As próximas quatro secções descrevem as opções disponíveis no painel **apps.**
+A carga de trabalho das aplicações fornece links para aceder a informações e funcionalidades comuns de aplicações. 
 
-### <a name="manage"></a>Gerir
-- **Aplicações**: selecione esta opção para adicionar, ver, atribuir e monitorizar as aplicações que a sua força de trabalho utiliza. Para obter mais informações, consulte:
-  - [Adicionar aplicações](apps-add.md).
-  - [Atribuir aplicações](apps-deploy.md).
-  - [Monitorizar aplicações](apps-monitor.md).
-- **Políticas de configuração de aplicações**: selecione esta opção para disponibilizar definições que poderão ser necessárias quando o utilizador executar uma aplicação. Para obter mais informações, consulte:
-  - [Políticas de configuração de aplicações do Intune](app-configuration-policies-overview.md).
-    - Políticas de configuração de [aplicações iOS/iPadOS.](app-configuration-policies-use-ios.md)
-    - [Políticas de configuração de aplicações Android](app-configuration-policies-use-android.md).
-- **Políticas de proteção de aplicações**: selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para obter mais informações, consulte:
-  - [Políticas de proteção de aplicações ](app-protection-policies.md).
-- **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para obter mais informações, consulte:
-  - [Eliminação seletiva de aplicações](apps-selective-wipe.md).
-- Perfis de fornecimento de **aplicações iOS**: as aplicações iOS/iPadOS incluem um perfil de provisionamento e código que é assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para obter mais informações, consulte:
-  - Perfis de fornecimento de [aplicações iOS/iPadOS.](app-provisioning-profile-ios.md)
+O topo do menu de navegação de carga de trabalho da App fornece detalhes da aplicação comumente usados:
+- **Visão geral**: Selecione esta opção para visualizar o nome do inquilino, a autoridade do MDM, a localização do inquilino, o estado da conta, o estado de instalação da aplicação e o estado da política de proteção de aplicações.
+- **Todas as aplicações**: Selecione esta opção para apresentar uma lista de todas as aplicações disponíveis. Pode adicionar aplicações adicionais a partir desta página. Além disso, pode ver o estado de cada aplicação, bem como se cada aplicação é atribuída. Para mais informações, consulte [Adicionar apps](apps-add.md) e [atribuir aplicações.](apps-deploy.md)
+- **Monitorizar aplicações**
+    - **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para mais informações, consulte as aplicações do programa adquirido em [volume iOS (VPP)](vpp-apps-ios.md) e a [Microsoft Store para aplicações compradas](windows-store-for-business.md)em volume de negócios.
+    - **Aplicativos descobertos**: Ver aplicações que foram atribuídas pela Intune ou instaladas num dispositivo. Para mais informações, consulte [intune aplicações descobertas.](app-discovered-apps.md)
+    - Estado de instalação de **aplicações**: Veja o estado de uma atribuição de aplicações que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+    - **Estado da proteção da aplicação**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
+- **Por Plataforma**: Selecione estas plataformas para visualizar as aplicações disponíveis por plataforma.
+    - Windows
+    - iOS
+    - macOS
+    - Android
+- **Política:**
+    - **Políticas de proteção de aplicações**: selecione esta opção para associar definições a uma aplicação e ajudar a proteger os dados da empresa que utiliza. Por exemplo, pode restringir as capacidades de uma aplicação para comunicar com outras aplicações ou exigir que o utilizador introduza um PIN para aceder a uma aplicação da empresa. Para mais informações, consulte as políticas de proteção de [aplicativos](app-protection-policies.md).
+    - **Políticas de configuração de aplicações**: selecione esta opção para disponibilizar definições que poderão ser necessárias quando o utilizador executar uma aplicação. Para mais informações, consulte as políticas de configuração de [apps,](app-configuration-policies-use-ios.md)políticas de configuração de [aplicações iOS](app-configuration-policies-use-ios.md)e políticas de configuração de [aplicações Android.](app-configuration-policies-overview.md)
+    - **Perfis de aprovisionamento de aplicações iOS**: as aplicações iOS incluem um perfil de aprovisionamento e um código assinado por um certificado. Quando o certificado expirar, a aplicação já não poderá ser executada. O Intune proporciona-lhe as ferramentas para atribuir proativamente uma nova política de perfil de aprovisionamento a dispositivos que tenham aplicações prestes a expirar. Para mais informações, consulte perfis de [fornecimento de aplicações iOS](app-provisioning-profile-ios.md).
+    - **Políticas suplementares do modo S**: Selecione esta opção para autorizar aplicações adicionais para executar nos seus dispositivos de modo S geridos. Para mais informações, consulte [as políticas suplementares do modo S](~/apps/apps-win32-s-mode.md).
+    - **Conjuntos de política**: Selecione esta opção para criar uma coleção atribuível de apps, políticas e outros objetos de gestão que criou. Para mais informações, consulte definições de [política.](~/fundamentals/policy-sets.md)
+- **Outros:**   
+    - **Eliminação seletiva de aplicações**: selecione esta opção para remover apenas os dados empresariais do dispositivo de um utilizador selecionado. Para mais informações, consulte [a limpeza seletiva](apps-selective-wipe.md)da App .
+    - **Categorias de aplicações**: adicione, afixe e elimine nomes de categorias de aplicações.
+    - **E-books**: Algumas lojas de aplicações dão-lhe a capacidade de adquirir várias licenças para uma app ou livros que pretende utilizar na sua empresa. Para obter mais informações, veja [Gerir aplicações e livros comprados em grandes volumes com o Microsoft Intune](~/apps/vpp-apps.md).
+- **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para mais informações, consulte problemas de [resolução de problemas.](../fundamentals/help-desk-operators.md)
 
-Para obter mais informações sobre esta secção, veja [Gerir aplicações](app-management.md).
-
-### <a name="monitor"></a>Monitor
-- **Licenças de aplicações**: veja, atribua e monitorize as aplicações compradas em volume nas lojas de aplicações. Para obter mais informações, consulte:
-  - aplicações de programa adquirido em [volume iOS/iPadOS (VPP).](vpp-apps-ios.md)
-  - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicações Detetadas**: veja as aplicações que foram atribuídas pelo Intune ou instaladas num dispositivo. Para mais informações, consulte [intune aplicações descobertas.](app-discovered-apps.md)
-- **Estado da Instalação da Aplicação**: veja o estado da atribuição de uma aplicação que criou. Para obter mais informações, veja [Como monitorizar informações e atribuições da aplicação com o Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
-- **Estado da proteção da aplicação**: veja o estado da política de proteção de uma aplicação de um utilizador selecionado.
-- **Registos de auditoria**: veja a atividade relacionada com a aplicação do Intune realizada por todos os administradores de TI.
-
-Para obter mais informações sobre esta secção, veja [Monitorizar aplicações](apps-monitor.md).
-
-### <a name="set-up"></a>Configurar
-- **iOS Fichas VPP**: Aplicar e ver as suas licenças iOS/iPadOS Volume Purchase Program (VPP). Para obter mais informações, consulte:
-  - [aplicações iOS/iPadOS compradas em volume](vpp-apps-ios.md)
+## <a name="additional-information"></a>Informações adicionais
+Os seguintes itens dentro da consola fornecem funcionalidaderelacionada com a aplicação:
+- **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para mais informações, consulte a [Microsoft Store para aplicações compradas](windows-store-for-business.md)em volume de negócios.
 - **Certificado empresarial do Windows**: aplique ou veja o estado de um certificado de assinatura de código que serve para distribuir aplicações de linha de negócio nos dispositivos Windows geridos.
 - **Certificado da Symantec do Windows**: aplique ou veja o estado de um certificado de assinatura de código da Symantec, que é preciso para distribuir ficheiros appx de XAP e WP8.x aos dispositivos Windows 10 Mobile.
-- **Microsoft Store para Empresas**: configure a integração na Microsoft Store para Empresas. Em seguida, pode sincronizar com o Intune as aplicações compradas, atribuí-las e controlar a utilização das suas licenças. Para obter mais informações, consulte:
-  - [Aplicações compradas em volume na Microsoft Store para Empresas](windows-store-for-business.md).
-- **Chaves de sideloading do Windows**: adicione uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows. Para obter mais informações, consulte:
-  - [Fazer sideload de uma aplicação Windows](app-sideload-windows.md).
-- **Imagem corporativa do Portal da Empresa**: personalize o Portal da Empresa para lhe dar a imagem corporativa da sua empresa. Para obter mais informações, consulte:
-  - [Configuração do Portal da Empresa](company-portal-app.md).
-- **Categorias de aplicações**: adicione, afixe e elimine nomes de categorias de aplicações.
-- **Perfil de trabalho do Android**: aprove e sincronize as aplicações que aprovou para a sua empresa. Para obter mais informações, consulte:
-  - [Aplicações do perfil de trabalho do Android](apps-add-android-for-work.md).
-
-### <a name="help-and-support"></a>Ajuda e suporte
-- **Ajuda e suporte**: resolva problemas, peça suporte ou veja o estado do Intune. Para obter mais informações, consulte:
-  - [Resolver problemas](../fundamentals/help-desk-operators.md).
+- **Chaves de sideloading do Windows**: adicione uma chave de sideloading do Windows que pode utilizar para instalar uma aplicação diretamente nos dispositivos, em vez de publicar e transferir a aplicação da Loja Windows. Para mais informações, consulte [side-load uma aplicação Windows](app-sideload-windows.md).
+- **Fichas Apple VPP**: Aplicar e ver as suas licenças iOS/iPadOS Volume Purchase Program (VPP). Para mais informações, consulte [aplicações adquiridas em volume iOS/iPadOS.](vpp-apps-ios.md)
+- **Gerido Google Play**: Managed Google Play é a loja de aplicações da Google e única fonte de aplicações para Android Enterprise. Para mais informações, consulte [adicionar aplicações do Google Play geridas para dispositivos Android Enterprise com Intune](~/apps/apps-add-android-for-work.md).
+- **Branding e personalização:** Personalize o Portal da Empresa para lhe dar a marca da empresa. Para mais informações, consulte a [configuração do Portal da Empresa.](company-portal-app.md)
 
 ## <a name="next-steps"></a>Próximos passos
 

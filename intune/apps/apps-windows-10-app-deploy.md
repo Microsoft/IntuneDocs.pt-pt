@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 88867e76df3d77aefc96a30c7e198f9d36950c25
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609220"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856073"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Implementação de aplicações do Windows 10 utilizando o Microsoft Intune 
 
@@ -44,7 +44,7 @@ As aplicações de linha de negócio (LOB) e as aplicações da Microsoft Store 
 
 Os tipos de aplicações específicos são suportados com base na versão do Windows 10 que os seus utilizadores estão a executar. A tabela seguinte fornece o tipo de aplicação e a capacidade de suporte do Windows 10.
 
-| Tipo de aplicação | Casa | Pro | Empresa | Enterprise | Educação | Modo S | HoloLens<sup>1 | Surface Hub | WCOS | Mobile |
+| Tipo de aplicação | Casa | Pro | Empresa | Empresarial | Educação | Modo S | HoloLens<sup>1 | Surface Hub | WCOS | Mobile |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  . MSI | Não | Sim | Sim | Sim | Sim | Não | Não | Não | Não | Não |
 | . IntuneWin | Não | Sim | Sim | Sim | Sim | 19H2+ | Não | Não | Não | Não |
@@ -54,9 +54,11 @@ Os tipos de aplicações específicos são suportados com base na versão do Win
 | MSFB Online | Sim | Sim | Sim | Sim | Sim | Sim | RS4+ | Não | Sim | Sim |
 | Aplicações na Web | Sim | Sim | Sim | Sim | Sim | Sim | Sim<sup>2 | Sim<sup>2 | Sim | Sim<sup>2 |
 | Link da loja | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| Microsoft Edge | Não | Sim | Sim | Sim | Sim | 19H2+<sup>3 | Não | Não | Não | Não |
 
 <sup>1</sup> Para desbloquear a gestão de aplicações, atualize o seu dispositivo HoloLens para [Holographic for Business](../fundamentals/windows-holographic-for-business.md).<br />
-<sup>2</sup> Lançamento apenas do Portal da Empresa.
+<sup>2</sup> Lançamento apenas do Portal da Empresa.<br />
+<sup>3</sup> Para que a aplicação 3 Para a instalação com sucesso, os dispositivos também devem ser atribuídos a uma política de Modo S.
 
 > [!NOTE]
 > Todos os tipos de aplicativos do Windows requerem inscrição.

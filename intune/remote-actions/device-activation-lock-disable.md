@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af5bb1c95a15a5c52585278605e2f7a86307cb76
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.openlocfilehash: 7a322788dba092f44af2f0664fe810f8392b9f56
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77782220"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78855988"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>Desativar bloqueio de ativação em dispositivos supervisionados iOS/iPadOS com Intune
 
@@ -62,7 +62,7 @@ Intune pode solicitar o estado de Bloqueio de Ativação de dispositivos supervi
 ## <a name="before-you-start"></a>Antes de começar
 Antes de poder desativar o bloqueio de ativação nos dispositivos, deve activar-o seguindo estas instruções:
 
-1. Configure um perfil de restrição do dispositivo Intune para iOS/iPadOS utilizando as informações em [Como configurar as definições](/intune-azure/configure-devices/how-to-configure-device-restrictions)de restrição do dispositivo .
+1. Configure um perfil de restrição do dispositivo Intune para iOS/iPadOS utilizando as informações em [Como configurar as definições](../configuration/device-restrictions-configure.md)de restrição do dispositivo .
 2. Nas definições de restrição do [dispositivo para iOS/iPadOS,](../configuration/device-restrictions-ios.md)sob as definições **gerais,** ative a fechadura de **ativação**da opção .
 3. Guarde o perfil e, em seguida, [atribua-o](../configuration/device-profile-assign.md) aos dispositivos em que pretende gerir o Bloqueio de Ativação de Desativação.
 
@@ -78,7 +78,7 @@ A ação do dispositivo remoto de ativação Intune **Desativação** remove o b
 3. No painel do **Intune**, selecione **Dispositivos**.
 4. No painel **Dispositivos**, selecione **Todos os dispositivos**.
 5. Na lista de dispositivos que gere, selecione a ação remota do dispositivo **de ativação de ativação desativação.**
-6. Aceda à secção "Hardware" do dispositivo e, em seguida, copie o **Código para ignorar o bloqueio de ativação** em **Acesso condicional**.
+6. Aceda à secção "Hardware" do dispositivo e, em seguida, copie o valor do código de bypass do bloqueio de **ativação** em **acesso condicional**.
 
     >[!NOTE]
     >Copie o código para ignorar antes de limpar o dispositivo. Se repuser as definições do dispositivo antes de copiar o código, este será removido do Azure.

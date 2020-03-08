@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e0c0d6ddafc8079d5d25a964ecb4ff3e0acfdd
+ms.openlocfilehash: 54216f141d591c779a79bbe5878ddc8b9b0f5e60
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78369359"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78892907"
 ---
 # <a name="intune-data-warehouse-collections"></a>Coleções do Armazém de Dados do Intune
 
@@ -663,7 +663,7 @@ A entidade **termsAndConditions** representa os metadados e o conteúdo de uma d
 
 |    Propriedade        |    Description    |    Exemplo        |
 |----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-|    termsAndConditionsKey    |    Uma chave correspondente a uma entrada na coleção “userTermsAndConditionsAcceptances”    |    123    |
+|    termsAndConditionsKey    |    Uma chave correspondente a uma entrada na coleção 'userTermsAndConditionsAccepts'    |    123    |
 |    termsAndCondidionsId    |    O ID para esta entrada termsAndConditions    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    A versão da entrada destes termos e condições    |    1    |
 |    nome    |    O nome da entrada destes termos e condições.        |    Termos de utilização do Intune     |
@@ -707,9 +707,9 @@ A entidade **userTermsAndConditionsAcceptance** representa o estado de aceitaç�
 
 |    Propriedade    |    Description    |    Exemplo    |
 |-------------------------------|--------------------------------------------------------------------------------|----------------------------|
-|    dateKey    |    Uma chave correspondente aos valores de data na coleção "datas".     |    20180823    |
-|    userKey    |    Um mapeamento de chave de utilizador para um utilizador na coleção "utilizadores".     |    20000    |
-|    termsAndConditionsKey    |    Uma chave correspondente a uma entrada na coleção “termsAndConditions”    |    1    |
+|    dateKey    |    Uma chave correspondente aos valores de data na coleção 'datas'.     |    20180823    |
+|    userKey    |    Um mapeamento de chave de utilizador para um utilizador na coleção 'utilizadores'.     |    20000    |
+|    termsAndConditionsKey    |    Uma chave correspondente a uma entrada na coleção 'termsAndConditions'    |    1    |
 |    acceptedDateTimeUTC    |    A hora em que o utilizador aceitou estes termos e condições    |    8/23/2018 4:01:34    |
 |    lastModifiedDateTimeUTC    |    A última vez que esta entrada foi modificada.     |    8/23/2018 4:01:34    |
 

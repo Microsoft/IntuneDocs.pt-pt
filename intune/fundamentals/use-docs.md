@@ -11,12 +11,12 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de30ade4c145a930ed370fd651c35bd57700c76d
-ms.sourcegitcommit: b4502dc09b82985265299968a11158f5898b56e0
+ms.openlocfilehash: cb833f54c994779409611d2dcdff48d92336c0c5
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78287549"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856107"
 ---
 # <a name="using-the-intune-docs"></a>Using the Intune docs (Utilizar a documentação do Intune)
 
@@ -117,7 +117,7 @@ Siga estas orientações gerais ao contribuir para os docs intune:
 
 ## <a name="consolidation-of-documentation-for-microsoft-endpoint-manager"></a>Consolidação da documentação para o Microsoft Endpoint Manager
 
-Para melhor suportar cenários combinados para Intune e Diretor de Configuração, esta biblioteca de documentação está a mudar-se para [https://docs.microsoft.com/memdocs/intune](https://docs.microsoft.com/memdocs/intune). A biblioteca de documentação do Gestor de Configuração passará mais tarde para [https://docs.microsoft.com/memdocs/configmgr](https://docs.microsoft.com/memdocs/configmgr). Todas as ligações serão automaticamente redirecionadas, pelo que não é necessário fazer alterações para a leitura deste conteúdo.
+Para melhor suportar cenários combinados para Intune e Diretor de Configuração, esta biblioteca de documentação está a mover-se para https://docs.microsoft.com/mem/intune. A biblioteca de documentação do Gestor de Configuração passará mais tarde para https://docs.microsoft.com/mem/configmgr. Todas as ligações serão automaticamente redirecionadas, pelo que não é necessário fazer alterações para a leitura deste conteúdo.
 
 Se fornecer feedback ou contribuir para artigos, são necessárias algumas alterações:
 

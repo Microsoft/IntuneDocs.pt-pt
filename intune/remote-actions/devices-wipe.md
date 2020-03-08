@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 931a1255a0b7aef6f776e8e0bf259e1ea0dd8d65
+ms.openlocfilehash: ac5f652117e6baa7f34ea32096c958d029bf6d58
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78368907"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856153"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Remover dispositivos ao apagar os dados, extinguir ou anular a inscrição do dispositivo de forma manual
 
@@ -174,7 +174,7 @@ Pode configurar o Intune de forma a eliminar automaticamente dispositivos que pa
 Poderá ter de eliminar dispositivos do Azure AD devido a problemas de comunicação ou dispositivos em falta. Pode utilizar a ação **Eliminar** para remover registos de dispositivos do portal do Azure para dispositivos que sabe que são inacessíveis e pouco prováveis de voltar a comunicar com o Azure. A ação **Eliminar** não remove um dispositivo da gestão.
 
 1. Inicie sessão no [Azure Active Directory no portal do Azure](https://aka.ms/accessaad) com as suas credenciais de administrador. Também pode iniciar sessão no [centro de administração do Microsoft 365](https://admin.microsoft.com). A partir do menu, selecione **Centros de administração** > **Azure AD**.
-2. Se não tiver uma, crie uma Subscrição do Azure. Isto não deve exigir um cartão de crédito ou pagamento se tiver uma conta paga (selecione a ligação de subscrição **Registar o Azure Active Directory gratuito**).
+2. Crie uma subscrição Azure se não tiver uma. Isto não deve exigir um cartão de crédito ou pagamento se tiver uma conta paga (selecione a ligação de subscrição **Registar o Azure Active Directory gratuito**).
 3. Selecione **Azure Active Directory** e, em seguida, selecione a sua organização.
 4. Selecione o separador **Utilizadores** .
 5. Selecione o utilizador associado ao dispositivo que pretende eliminar.
@@ -196,7 +196,7 @@ Se pretender remover completamente um dispositivo DEP da Apple da gestão pelo I
     ![Captura de ecrã da opção Reatribuir da Apple](./media/devices-wipe/apple-reassign.png)
 
 ## <a name="device-states"></a>Estados do dispositivo
-Para obter uma descrição dos estados do dispositivo, consulte a [recolha de gestãoStates](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates).
+Para obter uma descrição dos estados do dispositivo, consulte a [recolha de gestãoStates](../developer/intune-data-warehouse-collections.md#managementstates).
 
 ## <a name="fresh-start"></a>Começar do Zero
 

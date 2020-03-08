@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc2843073d11e5c9dae989a60f357dcfeb16a5d2
+ms.openlocfilehash: 075f4bdd52bfa72e2eaed051c765d77d7b80e6fd
 ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78290809"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78856250"
 ---
 # <a name="data-protection-framework-using-app-protection-policies"></a>Quadro de proteção de dados utilizando políticas de proteção de aplicações 
 
 À medida que mais organizações implementam estratégias de dispositivos móveis para aceder a dados de trabalho ou escolares, a proteção contra fugas de dados torna-se primordial. A solução de gestão de aplicações móveis da Intune para proteger contra fugas de dados é políticas de proteção de aplicações (APP). A APP são regras que garantem que os dados de uma organização permanecem seguros ou contidos numa aplicação gerida, independentemente de o dispositivo estar matriculado. Para mais informações, consulte a visão geral das políticas de proteção de [aplicações](~/apps/app-protection-policy.md). 
 
-Ao configurar políticas de proteção de aplicações, o número de várias configurações e opções permite que as organizações adaptem a proteção às suas necessidades específicas. Devido a esta flexibilidade, pode não ser óbvio qual a permutação das definições políticas necessárias para implementar um cenário completo. Para ajudar as organizações a priorizar os esforços de endurecimento, a Microsoft introduziu uma nova taxonomia para configurações de [segurança no Windows 10](https://aka.ms/secconframework), e a Intune está a aproveitar esta taxonomia para o seu quadro de proteção de dados APP para gestão de aplicações móveis.  
+Ao configurar políticas de proteção de aplicações, o número de várias configurações e opções permite que as organizações adaptem a proteção às suas necessidades específicas. Devido a esta flexibilidade, pode não ser óbvio qual a permutação das definições políticas necessárias para implementar um cenário completo. Para ajudar as organizações a priorizar os esforços de endurecimento do ponto final do cliente, a Microsoft introduziu uma nova taxonomia para configurações de [segurança no Windows 10](https://aka.ms/secconframework), e a Intune está a aproveitar uma taxonomia semelhante para o seu quadro de proteção de dados APP para gestão de aplicações móveis.  
 
 O quadro de configuração de proteção de dados da APP é organizado em três cenários distintos de configuração: 
 
@@ -174,7 +174,8 @@ As definições de política aplicadas no nível 3 incluem todas as definições
 | Transferência de dados |       Receber dados de outras apps  |          Aplicativos geridos por políticas  |          iOS/iPadOS, Android         |  |
 | Transferência de dados |       Teclados de terceiros  |          Bloqueio  |          iOS/iPadOS        | No iOS, isto bloqueia que todos os teclados de terceiros funcionem dentro da aplicação.  |
 | Transferência de dados |       Teclados aprovados  |          Exigir  |          Android        | Com o Android, os teclados devem ser selecionados para serem utilizados com base nos seus dispositivos Android implantados.  |
-| Transferência de dados |       Selecione teclados para aprovar  |          *selecionar teclados desejados*  |          Android        | Com o Android, os teclados devem ser selecionados para serem utilizados com base nos seus dispositivos Android implantados.  |
+| Transferência de dados |       Selecione teclados para aprovar  |          *adicionar/remover teclados*  |          Android        | Com o Android, os teclados devem ser selecionados para serem utilizados com base nos seus dispositivos Android implantados.  |
+| Funcionalidade |       Imprimir dados org  |          Bloqueio  |          iOS/iPadOS, Android         |  |
 
 #### <a name="access-requirements"></a>Requisitos de acesso
 
@@ -184,7 +185,6 @@ As definições de política aplicadas no nível 3 incluem todas as definições
 |       Selecione comprimento pin mínimo  |          6  |          iOS/iPadOS, Android  |
 |       PIN reset após o número de dias  |          Sim  |          iOS/iPadOS, Android  |
 |       Número de dias  |          365  |          iOS/iPadOS, Android  |
-|       Selecione número de valores PIN anteriores para manter  |          5  |          Android  |
 
 #### <a name="conditional-launch"></a>Iniciação condicional
 
@@ -195,10 +195,11 @@ As definições de política aplicadas no nível 3 incluem todas as definições
 
 ## <a name="next-steps"></a>Próximos passos
 
-- [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
-- [Definições de política de proteção de aplicativos Android disponíveis com microsoft Intune](app-protection-policy-settings-android.md)
-- [Definições de política de proteção de aplicações iOS/iPadOS disponíveis com microsoft Intune](app-protection-policy-settings-ios.md)
+Os administradores podem incorporar os níveis de configuração acima indicados na sua metodologia de implantação de anéis para testes e utilização da produção, importando os [modelos json](https://github.com/microsoft/Intune-Config-Frameworks/tree/master/AppProtectionPolicies) de configuração da política de proteção de aplicações [Intune Intune com os scripts PowerShell da Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
 ## <a name="see-also"></a>Veja também
 
+- [Como criar e implementar políticas de proteção de aplicações com o Microsoft Intune](app-protection-policies.md)
+- [Definições de política de proteção de aplicativos Android disponíveis com microsoft Intune](app-protection-policy-settings-android.md)
+- [Definições de política de proteção de aplicações iOS/iPadOS disponíveis com microsoft Intune](app-protection-policy-settings-ios.md)
 - As aplicações de terceiros como a aplicação móvel do Salesforce funcionam com o Intune de formas específicas para proteger os dados empresariais. Para obter mais informações sobre como a aplicação Salesforce em particular funciona com o Intune (incluindo configurações de aplicações de MDM), veja [Aplicação Salesforce e Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf).
