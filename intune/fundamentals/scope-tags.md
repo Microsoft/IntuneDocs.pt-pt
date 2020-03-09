@@ -16,11 +16,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: dfb9ec9d28b00e454884bbf0bf296cd72cba4b6f
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569218"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369799"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilizar o controlo de acesso baseado em funções (RBAC) e etiquetas de âmbito para TI distribuídos
 
@@ -43,16 +43,16 @@ A função de etiqueta de âmbito padrão é semelhante à funcionalidade de âm
 
 ## <a name="to-create-a-scope-tag"></a>Para criar uma etiqueta de âmbito
 
-1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Funções** > **Scope (Tags)** > **Criar**.
-2. Na página **Basics,** forneça um **Nome** e **uma Descrição**opcional. Escolha **Seguinte**.
-3. Na página **de Atribuição,** escolha os grupos que contêm os dispositivos que pretende atribuir esta etiqueta de âmbito. Escolha **Seguinte**.
+1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Funções** > **Scope (Tags)**  > **Criar**.
+2. Na página **Basics,** forneça um **Nome** e **uma Descrição**opcional. Selecione **Next**.
+3. Na página **de Atribuição,** escolha os grupos que contêm os dispositivos que pretende atribuir esta etiqueta de âmbito. Selecione **Next**.
 4. Na **página Review + criar,** escolha **Criar**.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para atribuir uma etiqueta de âmbito a uma função
 
 1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha a **administração do Inquilino** > **Papéis** > **Todas as funções** > escolha um papel > **Atribuições** > **Atribuição**.
-2. Na página **Basics,** forneça um nome de **atribuição** e **descrição.** Escolha **Seguinte**.
-3. Na página dos **Grupos De Administração,** escolha **grupos Select para incluir**, e selecione os grupos que deseja como parte desta atribuição. Os utilizadores deste grupo terão permissões para gerir utilizadores/dispositivos no Âmbito (Grupos). Escolha **Seguinte**.
+2. Na página **Basics,** forneça um nome de **atribuição** e **descrição.** Selecione **Next**.
+3. Na página dos **Grupos De Administração,** escolha **grupos Select para incluir**, e selecione os grupos que deseja como parte desta atribuição. Os utilizadores deste grupo terão permissões para gerir utilizadores/dispositivos no Âmbito (Grupos). Selecione **Next**.
 
     ![Screenshot de grupos membros selecionados.](./media/scope-tags/select-member-groups.png)
 
@@ -72,7 +72,7 @@ Para objetos que suportam etiquetas de mira, as etiquetas de âmbito geralmente 
 
 1. No [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)escolha **Dispositivos** > Perfis de **Configuração** > escolha um perfil.
 
-2. Escolha **Propriedades** > **Scope (Tags)** > **Editar** > **Selecione etiquetas** de âmbito > escolha as etiquetas que pretende adicionar ao perfil.
+2. Escolha **Propriedades** > **Scope (Tags)**  > **Editar** > **Selecione etiquetas** de âmbito > escolha as etiquetas que pretende adicionar ao perfil.
 4. Escolha **Selecione** > **Rever + guardar**.
 
 ## <a name="scope-tag-details"></a>Detalhes da etiqueta de âmbito
@@ -96,7 +96,7 @@ Ao trabalhar com etiquetas de âmbito, lembre-se destes detalhes:
 - Só pode visar grupos listados no Scope (Grupos) da sua atribuição de funções.
 - Se tiver uma etiqueta de âmbito atribuída ao seu papel, não pode eliminar todas as etiquetas de âmbito num objeto Intune. Pelo menos uma etiqueta de mira é necessária.
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 Saiba como as etiquetas de alcance se comportam quando existem [várias atribuições de papéis.](role-based-access-control.md#multiple-role-assignments)
 Efetue a gestão das suas [funções](role-based-access-control.md) e [perfis](../configuration/device-profile-assign.md).

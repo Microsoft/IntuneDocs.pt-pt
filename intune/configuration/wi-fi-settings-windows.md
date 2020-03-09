@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68601d8ccf06cebf668c75857d23536e2c9e6553
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503515"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369790"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Adicionar definições de Wi-Fi para dispositivos Windows 10 e posteriores no Intune
 
@@ -64,7 +64,7 @@ Este artigo descreve estas definições.
       > [!NOTE]
       > Ao guardar o perfil Wi-Fi, o valor PSK que introduziu não é apresentado por motivos de segurança. A marca d'água da chave pré-partilhada continua a mostrar a indicação **Não configurado**, apesar de o PSK estar guardado no perfil. Para alterar o PSK, introduza uma nova chave e guarde o perfil. Se guardar o PSK, edite a política, deixe o PSK em branco e o PSK existente continuará a ser utilizado.
       > [!IMPORTANT]
-      > O PSK é o mesmo para todos os dispositivos para os quais você tem como alvo o perfil. Se a chave for comprometida, ela poderá ser usada por qualquer dispositivo para se conectar à rede Wi-Fi. Mantenha seu PSKs seguro para evitar acesso não autorizado.
+      > O PSK é o mesmo para todos os dispositivos a que se direciona o perfil. Se a chave estiver comprometida, pode ser utilizada por qualquer dispositivo para ligar à rede Wi-Fi. Mantenha os seus PSKs seguros para evitar acessos não autorizados.
 
 - **Definições de Proxy da empresa**: opte por utilizar as definições de proxy na sua organização. As opções são:
   - **Nenhuma**: não são configuradas definições de proxy.
@@ -159,7 +159,7 @@ Selecione **OK** > **Criar** para guardar as alterações. O perfil é criado e 
 
 Para as definições não disponíveis no Intune, pode exportar definições de Wi-Fi de outro dispositivo com Windows. Esta exportação cria um ficheiro XML com todas as definições. Em seguida, importe este ficheiro para o Intune e utilize-o como o perfil de Wi-Fi. Veja [Exportar e importar definições de Wi-Fi para dispositivos com Windows](wi-fi-settings-import-windows-8-1.md).
 
-## <a name="next-steps"></a>Próximos passos
+## <a name="next-steps"></a>Passos Seguintes
 
 O perfil é criado, mas não faz nada. Em seguida, [atribua este perfil](device-profile-assign.md).
 
