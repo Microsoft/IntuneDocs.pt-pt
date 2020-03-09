@@ -19,11 +19,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b3d29dce9b12a18e5d0f77cd7f9ecac07b3aefee
-ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77781228"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369369"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Atribuir aplicações a grupos com o Microsoft Intune
 
