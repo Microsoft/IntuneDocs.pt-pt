@@ -18,11 +18,11 @@ search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.sourcegitcommit: 25e4847ead0f56c269cfefe1e01c1b9106a28cf1
 ms.translationtype: MT
 ms.contentlocale: pt-PT
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754308"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78369977"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Controlo de acesso baseado em funções (RBAC) com microsoft Intune
 
@@ -64,11 +64,11 @@ Pode criar os seus próprios papéis com permissões personalizadas. Para mais i
 | Administrador de Serviços do Intune | Ler/escrever | Ler/escrever |
 | Administrador de Acesso Condicional | Nenhum | Nenhum |
 | Administrador de Segurança | Leia apenas (permissões administrativas completas para nó de segurança endpoint) | Ler apenas |
-| Operador de segurança | Ler apenas | Ler apenas |
+| Operador de Segurança | Ler apenas | Ler apenas |
 | Leitor de Segurança | Ler apenas | Ler apenas |
-| Administrador de conformidade | Nenhum | Ler apenas |
-| Administrador de dados de conformidade | Nenhum | Ler apenas |
-| Leitor global | Ler Apenas | Ler Apenas |
+| Administrador de Conformidade | Nenhum | Ler apenas |
+| Administrador de Dados de Conformidade | Nenhum | Ler apenas |
+| Leitor Global | Ler Apenas | Ler Apenas |
 
 > [!TIP]
 > Intune também mostra três extensões Azure AD: **Utilizadores**, **Grupos**, e **Acesso Condicional**, que são controlados usando O Azure AD RBAC. Além disso, o **Administrador da Conta de Utilizador** só executa as atividades do utilizador/grupo do AAD e não tem permissões completas para executar todas as atividades no Intune. Para mais informações, consulte [RBAC com Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
@@ -92,7 +92,7 @@ Para ver uma atribuição de papéis, escolha **Intune** > **Roles** > **Todas a
 - **Âmbito (Grupos)** : Todos os utilizadores/dispositivos destes grupos de segurança Azure podem ser geridos pelos utilizadores em Membros.
 - **[Âmbito (Etiquetas)](scope-tags.md)** : Os utilizadores dos Membros podem ver os recursos que têm as mesmas etiquetas de âmbito.
 
-### <a name="multiple-role-assignments"></a>Atribuições de função múltipla
+### <a name="multiple-role-assignments"></a>Atribuições de múltiplos papéis
 Se um utilizador tiver múltiplas atribuições de funções, permissões e etiquetas de âmbito, essas atribuições de funções estendem-se a diferentes objetos da seguinte forma:
 
 - Atribua permissões e etiquetas de âmbito apenas se aplicam aos objetos (como políticas ou aplicações) no âmbito de atribuição dessa função (Grupos). As permissões de atribuição e etiquetas de âmbito não se aplicam a objetos em outras atribuições de funções, a menos que a outra atribuição os conceda especificamente.
@@ -101,4 +101,4 @@ Se um utilizador tiver múltiplas atribuições de funções, permissões e etiq
 
 ## <a name="next-steps"></a>Próximos passos
 - [Atribuir uma função a um utilizador](assign-role.md)
-- [Criar uma função personalizada](create-custom-role.md)
+- [Criar um papel personalizado](create-custom-role.md)
